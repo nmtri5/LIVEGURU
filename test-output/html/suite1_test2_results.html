@@ -1,0 +1,666 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="" lang="">
+<head>
+  <title>Test Results Report - Run test on Firefox browser</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="description" content="TestNG unit test results." />
+  <link href="reportng.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="reportng.js"></script>
+</head>
+<body>
+<h1>Run test on Firefox browser</h1>
+<p>
+  Test duration: 269.188s
+</p>
+
+
+
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header failed">Failed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">com.liveguru.frontend.Cart</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  TC_04_ApplyCoupon
+      </td>
+  <td class="duration">
+    18.751s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        2019-06-25 23:59:46,179 INFO&nbsp; com.liveguru.frontend.Cart - Apply Coupon - Step 01: Click on Mobile Menu<br/>
+<br />
+                                2019-06-25 23:59:47,203 INFO&nbsp; com.liveguru.frontend.Cart - Apply Coupon - Step 02: Add item to Cart<br/>
+<br />
+                                2019-06-25 23:59:48,186 INFO&nbsp; com.liveguru.frontend.Cart - Apply Coupon - Step 03: Apply coupon<br/>
+<br />
+                                2019-06-25 23:59:49,393 INFO&nbsp; com.liveguru.frontend.Cart - Apply Coupon - Step 04: Verify coupon applied succesffuly<br/>
+<br />
+                                2019-06-25 23:59:49,567 INFO&nbsp; com.liveguru.frontend.Cart - ===PASSED==<br/>
+<br />
+                                2019-06-25 23:59:49,567 INFO&nbsp; com.liveguru.frontend.Cart - Apply Coupon - Step 04: Verify final price<br/>
+<br />
+                                2019-06-26 00:00:04,928 INFO&nbsp; com.liveguru.frontend.Cart - Actual = 500.00<br/>
+<br />
+                                2019-06-26 00:00:04,928 INFO&nbsp; com.liveguru.frontend.Cart - Expected = 475.00<br/>
+<br />
+                                2019-06-26 00:00:04,928 INFO&nbsp; com.liveguru.frontend.Cart - Compare value = false<br/>
+<br />
+                                2019-06-26 00:00:04,928 INFO&nbsp; com.liveguru.frontend.Cart - ===FAILED===<br/>
+<br />
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>java.lang.AssertionError: Value is not matching! expected [475.00] but found [500.00]</b></a><br />
+    <div class="stackTrace" id="exception-0">
+              org.testng.Assert.fail(Assert.java:94)<br />
+              org.testng.Assert.failNotEquals(Assert.java:496)<br />
+              org.testng.Assert.assertEquals(Assert.java:125)<br />
+              com.liveguru.commons.AbstractTest.checkEquals(AbstractTest.java:114)<br />
+              com.liveguru.commons.AbstractTest.verifyEquals(AbstractTest.java:124)<br />
+              com.liveguru.frontend.Cart.TC_04_ApplyCoupon(Cart.java:44)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br />
+              java.lang.reflect.Method.invoke(Unknown Source)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:639)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:774)<br />
+              org.testng.TestRunner.run(TestRunner.java:624)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:359)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:261)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1140)<br />
+              org.testng.TestNG.run(TestNG.java:1048)<br />
+              org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)<br />
+              org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)<br />
+              org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)<br />
+                </div>
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">com.liveguru.frontend.Global_RegisterToSystem</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  TC_01_registerToSystemSuccessfully
+      </td>
+  <td class="duration">
+    35.207s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        2019-06-25 23:58:49,350 INFO&nbsp; com.liveguru.frontend.Global_RegisterToSystem - Register - Step 01: Hover and click to Register link on header<br/>
+<br />
+                                2019-06-25 23:58:50,592 INFO&nbsp; com.liveguru.frontend.Global_RegisterToSystem - Register - Step 02: Click to Create an Account<br/>
+<br />
+                                2019-06-25 23:58:51,288 INFO&nbsp; com.liveguru.frontend.Global_RegisterToSystem - Register - Step 03: Verify create account page display<br/>
+<br />
+                                2019-06-25 23:58:51,448 INFO&nbsp; com.liveguru.frontend.Global_RegisterToSystem - ===PASSED==<br/>
+<br />
+                                2019-06-25 23:58:51,448 INFO&nbsp; com.liveguru.frontend.Global_RegisterToSystem - Register - Step 04: Fill in valid information and click Submit<br/>
+<br />
+                                2019-06-25 23:58:54,003 INFO&nbsp; com.liveguru.frontend.Global_RegisterToSystem - Register - Step 05: Verify register message display<br/>
+<br />
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-1', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //li[@class = &apos;success-msg&apos;]//span (tried for 30 second(s) with 500 MILLISECONDS interval)</b></a><br />
+    <div class="stackTrace" id="exception-1">
+              org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:82)<br />
+              org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)<br />
+              com.liveguru.commons.AbstractPage.getTextElement(AbstractPage.java:204)<br />
+              com.liveguru.objects.AccountDashboardPageObjects.isRegisterMessageSuccessDisplay(AccountDashboardPageObjects.java:17)<br />
+              com.liveguru.frontend.Global_RegisterToSystem.TC_01_registerToSystemSuccessfully(Global_RegisterToSystem.java:69)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br />
+              java.lang.reflect.Method.invoke(Unknown Source)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:639)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:774)<br />
+              org.testng.TestRunner.run(TestRunner.java:624)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:359)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:261)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1140)<br />
+              org.testng.TestNG.run(TestNG.java:1048)<br />
+              org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)<br />
+              org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)<br />
+              org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)<br />
+                    <b>Caused by: </b> <a href="javascript:toggleElement('exception-2', 'block')" title="Click to expand/collapse">org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.xpath: //li[@class = &apos;success-msg&apos;]//span<br/>
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br/>
+Build info: version: &apos;3.9.1&apos;, revision: &apos;63f7b50&apos;, time: &apos;2018-02-07T22:42:28.403Z&apos;<br/>
+System info: host: &apos;DESKTOP-4H2CDN2&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;<br/>
+Driver info: driver.version: unknown</a><br />
+        <div class="stackTrace" id="exception-2">
+                      org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)<br />
+                      java.util.Optional.orElseThrow(Unknown Source)<br />
+                      org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)<br />
+                      org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)<br />
+                      org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)<br />
+                      org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)<br />
+                      org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)<br />
+                      com.liveguru.commons.AbstractPage.getTextElement(AbstractPage.java:204)<br />
+                      com.liveguru.objects.AccountDashboardPageObjects.isRegisterMessageSuccessDisplay(AccountDashboardPageObjects.java:17)<br />
+                      com.liveguru.frontend.Global_RegisterToSystem.TC_01_registerToSystemSuccessfully(Global_RegisterToSystem.java:69)<br />
+                      sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+                      sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br />
+                      sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br />
+                      java.lang.reflect.Method.invoke(Unknown Source)<br />
+                      org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)<br />
+                      org.testng.internal.Invoker.invokeMethod(Invoker.java:639)<br />
+                      org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)<br />
+                      org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)<br />
+                      org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)<br />
+                      org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)<br />
+                      org.testng.TestRunner.privateRun(TestRunner.java:774)<br />
+                      org.testng.TestRunner.run(TestRunner.java:624)<br />
+                      org.testng.SuiteRunner.runTest(SuiteRunner.java:359)<br />
+                      org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)<br />
+                      org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)<br />
+                      org.testng.SuiteRunner.run(SuiteRunner.java:261)<br />
+                      org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+                      org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br />
+                      org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)<br />
+                      org.testng.TestNG.runSuitesLocally(TestNG.java:1140)<br />
+                      org.testng.TestNG.run(TestNG.java:1048)<br />
+                      org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)<br />
+                      org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)<br />
+                      org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)<br />
+                  </div>
+          </div>
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  TC_02_VerifyUserInformation
+      </td>
+  <td class="duration">
+    15.022s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        2019-06-25 23:59:24,571 INFO&nbsp; com.liveguru.frontend.Global_RegisterToSystem - Verify User Information - Step 01: Open Account Information page<br/>
+<br />
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-3', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //div[@class = &apos;block-content&apos;]//a[text() = &apos;Account Information&apos;] (tried for 10 second(s) with 500 MILLISECONDS interval)</b></a><br />
+    <div class="stackTrace" id="exception-3">
+              org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:82)<br />
+              org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)<br />
+              com.liveguru.commons.AbstractPage.waitForElementVisible(AbstractPage.java:587)<br />
+              com.liveguru.commons.AbstractPage.openAnySideMenuBar(AbstractPage.java:541)<br />
+              com.liveguru.frontend.Global_RegisterToSystem.TC_02_VerifyUserInformation(Global_RegisterToSystem.java:76)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br />
+              java.lang.reflect.Method.invoke(Unknown Source)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:639)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:774)<br />
+              org.testng.TestRunner.run(TestRunner.java:624)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:359)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:261)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1140)<br />
+              org.testng.TestNG.run(TestNG.java:1048)<br />
+              org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)<br />
+              org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)<br />
+              org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)<br />
+                    <b>Caused by: </b> <a href="javascript:toggleElement('exception-4', 'block')" title="Click to expand/collapse">org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.xpath: //div[@class = &apos;block-content&apos;]//a[text() = &apos;Account Information&apos;]<br/>
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br/>
+Build info: version: &apos;3.9.1&apos;, revision: &apos;63f7b50&apos;, time: &apos;2018-02-07T22:42:28.403Z&apos;<br/>
+System info: host: &apos;DESKTOP-4H2CDN2&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;<br/>
+Driver info: driver.version: unknown</a><br />
+        <div class="stackTrace" id="exception-4">
+                      org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)<br />
+                      java.util.Optional.orElseThrow(Unknown Source)<br />
+                      org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)<br />
+                      org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)<br />
+                      org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)<br />
+                      org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)<br />
+                      org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)<br />
+                      com.liveguru.commons.AbstractPage.waitForElementVisible(AbstractPage.java:587)<br />
+                      com.liveguru.commons.AbstractPage.openAnySideMenuBar(AbstractPage.java:541)<br />
+                      com.liveguru.frontend.Global_RegisterToSystem.TC_02_VerifyUserInformation(Global_RegisterToSystem.java:76)<br />
+                      sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+                      sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br />
+                      sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br />
+                      java.lang.reflect.Method.invoke(Unknown Source)<br />
+                      org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)<br />
+                      org.testng.internal.Invoker.invokeMethod(Invoker.java:639)<br />
+                      org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)<br />
+                      org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)<br />
+                      org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)<br />
+                      org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)<br />
+                      org.testng.TestRunner.privateRun(TestRunner.java:774)<br />
+                      org.testng.TestRunner.run(TestRunner.java:624)<br />
+                      org.testng.SuiteRunner.runTest(SuiteRunner.java:359)<br />
+                      org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)<br />
+                      org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)<br />
+                      org.testng.SuiteRunner.run(SuiteRunner.java:261)<br />
+                      org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+                      org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br />
+                      org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)<br />
+                      org.testng.TestNG.runSuitesLocally(TestNG.java:1140)<br />
+                      org.testng.TestNG.run(TestNG.java:1048)<br />
+                      org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)<br />
+                      org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)<br />
+                      org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)<br />
+                  </div>
+          </div>
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">com.liveguru.frontend.PurchaseProduct</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  TC_09_PurchaseProduct
+      </td>
+  <td class="duration">
+    53.212s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        2019-06-26 00:01:18,671 INFO&nbsp; com.liveguru.frontend.PurchaseProduct - Purchase a Product - Step 01: Click to My Wishlist Page<br/>
+<br />
+                                2019-06-26 00:01:19,629 INFO&nbsp; com.liveguru.frontend.PurchaseProduct - Purchase a Product - Step 02: Add Samsung LCD from Wishlist Page to Cart<br/>
+<br />
+                                2019-06-26 00:01:21,014 INFO&nbsp; com.liveguru.frontend.PurchaseProduct - Purchase a Product - Step 03: Select Canada in Shipping country<br/>
+<br />
+                                2019-06-26 00:01:21,552 INFO&nbsp; com.liveguru.frontend.PurchaseProduct - Purchase a Product - Step 04: Select Ontario in Shipping state<br/>
+<br />
+                                2019-06-26 00:01:21,935 INFO&nbsp; com.liveguru.frontend.PurchaseProduct - Purchase a Product - Step 05: Input ZIP code<br/>
+<br />
+                                2019-06-26 00:01:22,237 INFO&nbsp; com.liveguru.frontend.PurchaseProduct - Purchase a Product - Step 06: Click Estimate button<br/>
+<br />
+                                2019-06-26 00:01:23,518 INFO&nbsp; com.liveguru.frontend.PurchaseProduct - Purchase a Product - Step 07: Verify if Shipping method displayed<br/>
+<br />
+                                2019-06-26 00:01:23,712 INFO&nbsp; com.liveguru.frontend.PurchaseProduct - ===PASSED==<br/>
+<br />
+                                2019-06-26 00:01:23,712 INFO&nbsp; com.liveguru.frontend.PurchaseProduct - Purchase a Product - Step 08: Choose a shipping method (Fixed)<br/>
+<br />
+                                2019-06-26 00:01:24,202 INFO&nbsp; com.liveguru.frontend.PurchaseProduct - Purchase a Product - Step 09: Click to Update Total button<br/>
+<br />
+                                2019-06-26 00:01:25,025 INFO&nbsp; com.liveguru.frontend.PurchaseProduct - Purchase a Product - Step 10: Verify if Final price is correctly calculated<br/>
+<br />
+                                2019-06-26 00:01:40,574 INFO&nbsp; com.liveguru.frontend.PurchaseProduct - Actual = 105.00<br/>
+<br />
+                                2019-06-26 00:01:40,574 INFO&nbsp; com.liveguru.frontend.PurchaseProduct - Expected = 105.00<br/>
+<br />
+                                2019-06-26 00:01:40,574 INFO&nbsp; com.liveguru.frontend.PurchaseProduct - Compare value = true<br/>
+<br />
+                                2019-06-26 00:01:40,574 INFO&nbsp; com.liveguru.frontend.PurchaseProduct - ===PASSED===<br/>
+<br />
+                                2019-06-26 00:01:40,574 INFO&nbsp; com.liveguru.frontend.PurchaseProduct - Purchase a Product - Step 11: Click to Proceed to Checkout button<br/>
+<br />
+                                2019-06-26 00:01:41,560 INFO&nbsp; com.liveguru.frontend.PurchaseProduct - Purchase a Product - Step 12: VP - Verify if Billing Information section is active<br/>
+<br />
+                                2019-06-26 00:01:41,654 INFO&nbsp; com.liveguru.frontend.PurchaseProduct - ===PASSED==<br/>
+<br />
+                                2019-06-26 00:01:41,741 INFO&nbsp; com.liveguru.frontend.PurchaseProduct - Purchase a Product - Step 13: Input Billing Information<br/>
+<br />
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-5', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //li[@id = &apos;opc-billing&apos;]//*[contains(@title, &apos;First Name&apos;)] (tried for 30 second(s) with 500 MILLISECONDS interval)<br/>
+Build info: version: &apos;3.9.1&apos;, revision: &apos;63f7b50&apos;, time: &apos;2018-02-07T22:42:28.403Z&apos;<br/>
+System info: host: &apos;DESKTOP-4H2CDN2&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;<br/>
+Driver info: org.openqa.selenium.firefox.FirefoxDriver<br/>
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 67.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190516215225, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 16400, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}<br/>
+Session ID: 44cbe87a-f5ca-4a65-8f38-e84349b159ff</b></a><br />
+    <div class="stackTrace" id="exception-5">
+              org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:82)<br />
+              org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)<br />
+              com.liveguru.commons.AbstractPage.clearText(AbstractPage.java:128)<br />
+              com.liveguru.objects.CheckoutPageObjects.inputFirstName(CheckoutPageObjects.java:20)<br />
+              com.liveguru.frontend.PurchaseProduct.TC_09_PurchaseProduct(PurchaseProduct.java:85)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br />
+              java.lang.reflect.Method.invoke(Unknown Source)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:639)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:774)<br />
+              org.testng.TestRunner.run(TestRunner.java:624)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:359)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:261)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1140)<br />
+              org.testng.TestNG.run(TestNG.java:1048)<br />
+              org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)<br />
+              org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)<br />
+              org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)<br />
+                </div>
+      </td>
+</tr>
+      </table>
+
+
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header passed">Passed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">com.liveguru.frontend.Cart</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  TC_05_AddToCartLimitation
+      </td>
+  <td class="duration">
+    4.487s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        2019-06-26 00:00:04,933 INFO&nbsp; com.liveguru.frontend.Cart - Cart Product Limitation - Step 01: Click on Mobile Menu<br/>
+<br />
+                                2019-06-26 00:00:05,827 INFO&nbsp; com.liveguru.frontend.Cart - Cart Product Limitation - Step 02: Click add to Cart<br/>
+<br />
+                                2019-06-26 00:00:06,964 INFO&nbsp; com.liveguru.frontend.Cart - Cart Product Limitation - Step 03: Verify the items is added successfully<br/>
+<br />
+                                2019-06-26 00:00:07,083 INFO&nbsp; com.liveguru.frontend.Cart - ===PASSED==<br/>
+<br />
+                                2019-06-26 00:00:07,083 INFO&nbsp; com.liveguru.frontend.Cart - Cart Product Limitation - Step 04: Change quantity to 501<br/>
+<br />
+                                2019-06-26 00:00:07,514 INFO&nbsp; com.liveguru.frontend.Cart - Cart Product Limitation - Step 05: Click update button<br/>
+<br />
+                                2019-06-26 00:00:09,303 INFO&nbsp; com.liveguru.frontend.Cart - Cart Product Limitation - Step 06: Check error message display<br/>
+<br />
+                                2019-06-26 00:00:09,419 INFO&nbsp; com.liveguru.frontend.Cart - ===PASSED==<br/>
+<br />
+                  </div>
+    
+
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">com.liveguru.frontend.CompareProduct</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  TC_06_CompareProduct
+      </td>
+  <td class="duration">
+    6.470s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        2019-06-26 00:00:18,559 INFO&nbsp; com.liveguru.frontend.CompareProduct - Compare 2 products - Step 01: Click on Mobile Menu<br/>
+<br />
+                                2019-06-26 00:00:20,228 INFO&nbsp; com.liveguru.frontend.CompareProduct - Compare 2 products - Step 02: Add to Compare first item<br/>
+<br />
+                                2019-06-26 00:00:21,697 INFO&nbsp; com.liveguru.frontend.CompareProduct - Compare 2 products - Step 03: Verify first item is in compare waiting list<br/>
+<br />
+                                2019-06-26 00:00:21,882 INFO&nbsp; com.liveguru.frontend.CompareProduct - Compare 2 products - Step 04: Add to Compare second item<br/>
+<br />
+                                2019-06-26 00:00:23,223 INFO&nbsp; com.liveguru.frontend.CompareProduct - Compare 2 products - Step 05: Verify second item is in compare waiting list<br/>
+<br />
+                                2019-06-26 00:00:23,376 INFO&nbsp; com.liveguru.frontend.CompareProduct - Compare 2 products - Step 06: Click compare button<br/>
+<br />
+                                2019-06-26 00:00:24,258 INFO&nbsp; com.liveguru.frontend.CompareProduct - Compare 2 products - Step 07: Switch to the popup<br/>
+<br />
+                                2019-06-26 00:00:24,279 INFO&nbsp; com.liveguru.frontend.CompareProduct - Compare 2 products - Step 08: Verify if all products are appeared<br/>
+<br />
+                                2019-06-26 00:00:24,920 INFO&nbsp; com.liveguru.frontend.CompareProduct - ===PASSED==<br/>
+<br />
+                                2019-06-26 00:00:24,921 INFO&nbsp; com.liveguru.frontend.CompareProduct - Compare 2 products - Step 09: Close popup<br/>
+<br />
+                  </div>
+    
+
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">com.liveguru.frontend.ProductDetail</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  TC_03_VerifyPriceMatch
+      </td>
+  <td class="duration">
+    33.187s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        2019-06-25 23:58:08,868 INFO&nbsp; com.liveguru.frontend.ProductDetail - Check matching product price - Step 01: Click Mobile<br/>
+<br />
+                                2019-06-25 23:58:10,996 INFO&nbsp; com.liveguru.frontend.ProductDetail - Check matching product price - Step 02: Get price of product Sony Xperia<br/>
+<br />
+                                2019-06-25 23:58:26,094 INFO&nbsp; com.liveguru.frontend.ProductDetail - Check matching product price - Step 03: Go to product detail page<br/>
+<br />
+                                2019-06-25 23:58:26,903 INFO&nbsp; com.liveguru.frontend.ProductDetail - Check matching product price - Step 04: Check the product name and price if matched<br/>
+<br />
+                                2019-06-25 23:58:26,996 INFO&nbsp; com.liveguru.frontend.ProductDetail - Actual = IPHONE<br/>
+<br />
+                                2019-06-25 23:58:26,996 INFO&nbsp; com.liveguru.frontend.ProductDetail - Expected = IPHONE<br/>
+<br />
+                                2019-06-25 23:58:26,996 INFO&nbsp; com.liveguru.frontend.ProductDetail - Compare value = true<br/>
+<br />
+                                2019-06-25 23:58:26,996 INFO&nbsp; com.liveguru.frontend.ProductDetail - ===PASSED===<br/>
+<br />
+                                2019-06-25 23:58:42,054 INFO&nbsp; com.liveguru.frontend.ProductDetail - Actual = $500.00<br/>
+<br />
+                                2019-06-25 23:58:42,054 INFO&nbsp; com.liveguru.frontend.ProductDetail - Expected = $500.00<br/>
+<br />
+                                2019-06-25 23:58:42,054 INFO&nbsp; com.liveguru.frontend.ProductDetail - Compare value = true<br/>
+<br />
+                                2019-06-25 23:58:42,055 INFO&nbsp; com.liveguru.frontend.ProductDetail - ===PASSED===<br/>
+<br />
+                  </div>
+    
+
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">com.liveguru.frontend.Review</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  TC_08_AddReview
+      </td>
+  <td class="duration">
+    8.862s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        2019-06-26 00:00:35,730 INFO&nbsp; com.liveguru.frontend.Review - Add Review - Step 01: Open TV<br/>
+<br />
+                                2019-06-26 00:00:37,090 INFO&nbsp; com.liveguru.frontend.Review - Add Review - Step 02: Choose Samsung LCD<br/>
+<br />
+                                2019-06-26 00:00:38,228 INFO&nbsp; com.liveguru.frontend.Review - Add Review - Step 03: Click to Add review<br/>
+<br />
+                                2019-06-26 00:00:39,377 INFO&nbsp; com.liveguru.frontend.Review - Add Review - Step 04: Input to Let us know your thought textbox with a blank<br/>
+<br />
+                                2019-06-26 00:00:39,699 INFO&nbsp; com.liveguru.frontend.Review - Add Review - Step 05: Input to summary review textbox with a blank<br/>
+<br />
+                                2019-06-26 00:00:40,227 INFO&nbsp; com.liveguru.frontend.Review - Add Review - Step 06: Input to Nickname textbox with a blank<br/>
+<br />
+                                2019-06-26 00:00:40,543 INFO&nbsp; com.liveguru.frontend.Review - Add Review - Step 07: Click Submit Review button<br/>
+<br />
+                                2019-06-26 00:00:41,216 INFO&nbsp; com.liveguru.frontend.Review - Add Review - Step 08: Verify error message at let us know textbox<br/>
+<br />
+                                2019-06-26 00:00:41,433 INFO&nbsp; com.liveguru.frontend.Review - ===PASSED==<br/>
+<br />
+                                2019-06-26 00:00:41,433 INFO&nbsp; com.liveguru.frontend.Review - Add Review - Step 09: Verify error message at summary textbox<br/>
+<br />
+                                2019-06-26 00:00:41,687 INFO&nbsp; com.liveguru.frontend.Review - ===PASSED==<br/>
+<br />
+                                2019-06-26 00:00:41,687 INFO&nbsp; com.liveguru.frontend.Review - Add Review - Step 10: Verify error message at nickname textbox<br/>
+<br />
+                                2019-06-26 00:00:41,921 INFO&nbsp; com.liveguru.frontend.Review - ===PASSED==<br/>
+<br />
+                                2019-06-26 00:00:41,922 INFO&nbsp; com.liveguru.frontend.Review - Add Review - Step 11: Input to Let us know your thought textbox with proper value<br/>
+<br />
+                                2019-06-26 00:00:42,214 INFO&nbsp; com.liveguru.frontend.Review - Add Review - Step 12: Input to summary review textbox with proper value<br/>
+<br />
+                                2019-06-26 00:00:42,457 INFO&nbsp; com.liveguru.frontend.Review - Add Review - Step 13: Input to Nickname textbox with proper value<br/>
+<br />
+                                2019-06-26 00:00:42,789 INFO&nbsp; com.liveguru.frontend.Review - Add Review - Step 14: Click Submit Review button<br/>
+<br />
+                                2019-06-26 00:00:44,236 INFO&nbsp; com.liveguru.frontend.Review - Add Review - Step 15: Verify review success message and its content<br/>
+<br />
+                                2019-06-26 00:00:44,474 INFO&nbsp; com.liveguru.frontend.Review - ===PASSED==<br/>
+<br />
+                                2019-06-26 00:00:44,590 INFO&nbsp; com.liveguru.frontend.Review - Actual = Your review has been accepted for moderation.<br/>
+<br />
+                                2019-06-26 00:00:44,590 INFO&nbsp; com.liveguru.frontend.Review - Expected = Your review has been accepted for moderation.<br/>
+<br />
+                                2019-06-26 00:00:44,590 INFO&nbsp; com.liveguru.frontend.Review - Compare value = true<br/>
+<br />
+                                2019-06-26 00:00:44,590 INFO&nbsp; com.liveguru.frontend.Review - ===PASSED===<br/>
+<br />
+                  </div>
+    
+
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">com.liveguru.frontend.SearchFunction</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  TC_10_SearchFunction
+      </td>
+  <td class="duration">
+    4.972s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        2019-06-26 00:02:19,629 INFO&nbsp; com.liveguru.frontend.SearchFunction - Search Function - Step 03: Enter range from 0 - 150 in price field and click Search<br/>
+<br />
+                                2019-06-26 00:02:19,849 INFO&nbsp; com.liveguru.frontend.SearchFunction - Search Function - Step 04: Enter range from 0 - 150 in price field and click Search<br/>
+<br />
+                                2019-06-26 00:02:20,078 INFO&nbsp; com.liveguru.frontend.SearchFunction - Search Function - Step 05: Click Search<br/>
+<br />
+                                2019-06-26 00:02:20,880 INFO&nbsp; com.liveguru.frontend.SearchFunction - Search Function - Step 06: Verify products displayed<br/>
+<br />
+                                2019-06-26 00:02:21,073 INFO&nbsp; com.liveguru.frontend.SearchFunction - ===PASSED==<br/>
+<br />
+                                2019-06-26 00:02:21,073 INFO&nbsp; com.liveguru.frontend.SearchFunction - Search Function - Step 07: Click to Modify your search<br/>
+<br />
+                                2019-06-26 00:02:22,121 INFO&nbsp; com.liveguru.frontend.SearchFunction - Search Function - Step 08: Enter range from 151 - 1000 in price field and click Search<br/>
+<br />
+                                2019-06-26 00:02:22,551 INFO&nbsp; com.liveguru.frontend.SearchFunction - Search Function - Step 09: Enter range from 151 - 1000 in price field and click Search<br/>
+<br />
+                                2019-06-26 00:02:23,082 INFO&nbsp; com.liveguru.frontend.SearchFunction - Search Function - Step 10: Click Search<br/>
+<br />
+                                2019-06-26 00:02:24,124 INFO&nbsp; com.liveguru.frontend.SearchFunction - Search Function - Step 11: Verify products displayed<br/>
+<br />
+                                2019-06-26 00:02:24,600 INFO&nbsp; com.liveguru.frontend.SearchFunction - ===PASSED==<br/>
+<br />
+                  </div>
+    
+
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">com.liveguru.frontend.WishList</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  TC_07_ShareWishList
+      </td>
+  <td class="duration">
+    5.914s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        2019-06-26 00:00:58,392 INFO&nbsp; com.liveguru.frontend.WishList - Share Wishlist - Step 01: Click on TV Menu<br/>
+<br />
+                                2019-06-26 00:00:59,681 INFO&nbsp; com.liveguru.frontend.WishList - Share Wishlist - Step 02: Add LG LCD product to wishlist<br/>
+<br />
+                                2019-06-26 00:01:01,284 INFO&nbsp; com.liveguru.frontend.WishList - Share Wishlist - Step 03: Verify that product is successfully added to wishlist<br/>
+<br />
+                                2019-06-26 00:01:01,531 INFO&nbsp; com.liveguru.frontend.WishList - ===PASSED==<br/>
+<br />
+                                2019-06-26 00:01:01,531 INFO&nbsp; com.liveguru.frontend.WishList - Share Wishlist - Step 04: Click share wishlist button<br/>
+<br />
+                                2019-06-26 00:01:02,486 INFO&nbsp; com.liveguru.frontend.WishList - Share Wishlist - Step 05: Input email and message<br/>
+<br />
+                                2019-06-26 00:01:03,045 INFO&nbsp; com.liveguru.frontend.WishList - Share Wishlist - Step 06: Click share wishlist button<br/>
+<br />
+                                2019-06-26 00:01:04,052 INFO&nbsp; com.liveguru.frontend.WishList - Share Wishlist - Step 07: Verify share wishlist message display<br/>
+<br />
+                                2019-06-26 00:01:04,305 INFO&nbsp; com.liveguru.frontend.WishList - Actual = Your Wishlist has been shared.<br/>
+<br />
+                                2019-06-26 00:01:04,305 INFO&nbsp; com.liveguru.frontend.WishList - Expected = Your Wishlist has been shared.<br/>
+<br />
+                                2019-06-26 00:01:04,305 INFO&nbsp; com.liveguru.frontend.WishList - Compare value = true<br/>
+<br />
+                                2019-06-26 00:01:04,305 INFO&nbsp; com.liveguru.frontend.WishList - ===PASSED===<br/>
+<br />
+                  </div>
+    
+
+      </td>
+</tr>
+      </table>
+  
+</body>
+</html>

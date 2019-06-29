@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Register and Verify" parallel="false">
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener
+			class-name="org.uncommons.reportng.JUnitXMLReporter" />
+		<listener
+			class-name="com.liveguru.commons.ExtentReportListener" />
+	</listeners>
+	
+	<test name="Run test on ie browser">
+		<parameter name="browser" value="ie" />
+		<parameter name="shipping" value =".\testdata\com\liveguru\purchase\ShippingAddress.json" />
+		<classes>
+			<class name="com.liveguru.frontend.Global_RegisterToSystem" />
+			<class name="com.liveguru.frontend.ProductDetail" />
+			<class name="com.liveguru.frontend.Cart" /> 
+			<class name="com.liveguru.frontend.CompareProduct"/> 
+			<class name="com.liveguru.frontend.Review"/> 
+			<class name="com.liveguru.frontend.WishList"/> 
+			<class name="com.liveguru.frontend.PurchaseProduct"/>
+			<class name="com.liveguru.frontend.SearchFunction"/> 
+			
+		</classes>
+	</test>
+
+</suite> <!-- Suite -->

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Register and Verify]">
+  <parameter name="shipping" value=".\testdata\com\liveguru\purchase\ShippingAddress.json"/>
+  <parameter name="browser" value="ie"/>
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    <listener class-name="com.liveguru.commons.ExtentReportListener"/>
+  </listeners>
+  <test name="Run test on ie browser(failed)">
+    <parameter name="shipping" value=".\testdata\com\liveguru\purchase\ShippingAddress.json"/>
+    <parameter name="browser" value="ie"/>
+    <classes>
+      <class name="com.liveguru.frontend.PurchaseProduct">
+        <methods>
+          <include name="afterClass"/>
+          <include name="TC_09_PurchaseProduct"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.liveguru.frontend.PurchaseProduct -->
+      <class name="com.liveguru.frontend.ProductDetail">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+          <include name="TC_03_VerifyPriceMatch"/>
+        </methods>
+      </class> <!-- com.liveguru.frontend.ProductDetail -->
+      <class name="com.liveguru.frontend.Cart">
+        <methods>
+          <include name="TC_05_AddToCartLimitation"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+          <include name="TC_04_ApplyCoupon"/>
+        </methods>
+      </class> <!-- com.liveguru.frontend.Cart -->
+      <class name="com.liveguru.frontend.SearchFunction">
+        <methods>
+          <include name="afterClass"/>
+          <include name="TC_10_SearchFunction"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.liveguru.frontend.SearchFunction -->
+      <class name="com.liveguru.frontend.Global_RegisterToSystem">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="TC_01_registerToSystemSuccessfully"/>
+          <include name="afterTest"/>
+          <include name="TC_02_VerifyUserInformation"/>
+        </methods>
+      </class> <!-- com.liveguru.frontend.Global_RegisterToSystem -->
+      <class name="com.liveguru.frontend.WishList">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="TC_07_ShareWishList"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.liveguru.frontend.WishList -->
+      <class name="com.liveguru.frontend.Review">
+        <methods>
+          <include name="TC_08_AddReview"/>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.liveguru.frontend.Review -->
+      <class name="com.liveguru.frontend.CompareProduct">
+        <methods>
+          <include name="afterClass"/>
+          <include name="TC_06_CompareProduct"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.liveguru.frontend.CompareProduct -->
+    </classes>
+  </test> <!-- Run test on ie browser(failed) -->
+</suite> <!-- Failed suite [Register and Verify] -->

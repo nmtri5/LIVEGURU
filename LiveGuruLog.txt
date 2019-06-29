@@ -1,0 +1,2 @@
+2019-06-26 16:23:49,176 INFO  com.liveguru.frontend.Global_RegisterToSystem - Register - Step 01: Hover and click to Register link on header
+2019-06-26 16:23:58,408 INFO  com.liveguru.frontend.Global_RegisterToSystem - Register - Step 02: Click to Create an Account

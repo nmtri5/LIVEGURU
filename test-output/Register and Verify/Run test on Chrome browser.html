@@ -1,0 +1,529 @@
+<html>
+<head>
+<title>TestNG:  Run test on Chrome browser</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Run test on Chrome browser</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>9/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Jun 25 23:54:45 EDT 2019</td>
+</tr>
+<tr><td>Total time:</td><td>191 seconds (191253 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.liveguru.frontend.Cart.TC_04_ApplyCoupon()'><b>TC_04_ApplyCoupon</b><br>Test class: com.liveguru.frontend.Cart<br/>
+<a href="#Output-369671357" onClick='toggleBox("Output-369671357", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-369671357" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-369671357">
+2019-06-25 23:55:39,877 INFO  com.liveguru.frontend.Cart - Apply Coupon - Step 01: Click on Mobile Menu
+<br/>
+2019-06-25 23:55:40,910 INFO  com.liveguru.frontend.Cart - Apply Coupon - Step 02: Add item to Cart
+<br/>
+2019-06-25 23:55:42,518 INFO  com.liveguru.frontend.Cart - Apply Coupon - Step 03: Apply coupon
+<br/>
+2019-06-25 23:55:44,180 INFO  com.liveguru.frontend.Cart - Apply Coupon - Step 04: Verify coupon applied succesffuly
+<br/>
+2019-06-25 23:55:44,430 INFO  com.liveguru.frontend.Cart - ===PASSED==
+<br/>
+2019-06-25 23:55:44,430 INFO  com.liveguru.frontend.Cart - Apply Coupon - Step 04: Verify final price
+<br/>
+2019-06-25 23:55:59,927 INFO  com.liveguru.frontend.Cart - Actual = 500.00
+<br/>
+2019-06-25 23:55:59,927 INFO  com.liveguru.frontend.Cart - Expected = 475.00
+<br/>
+2019-06-25 23:55:59,927 INFO  com.liveguru.frontend.Cart - Compare value = false
+<br/>
+2019-06-25 23:55:59,927 INFO  com.liveguru.frontend.Cart - ===FAILED===
+<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: Value is not matching! expected [475.00] but found [500.00]
+	at com.liveguru.commons.AbstractTest.checkEquals(AbstractTest.java:114)
+	at com.liveguru.commons.AbstractTest.verifyEquals(AbstractTest.java:124)
+	at com.liveguru.frontend.Cart.TC_04_ApplyCoupon(Cart.java:44)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace369671357", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace369671357'><pre>java.lang.AssertionError: Value is not matching! expected [475.00] but found [500.00]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at com.liveguru.commons.AbstractTest.checkEquals(AbstractTest.java:114)
+	at com.liveguru.commons.AbstractTest.verifyEquals(AbstractTest.java:124)
+	at com.liveguru.frontend.Cart.TC_04_ApplyCoupon(Cart.java:44)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)
+</pre></div></td>
+<td>20</td>
+<td>com.liveguru.frontend.Cart@dbd940d</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.liveguru.frontend.Global_RegisterToSystem.TC_01_registerToSystemSuccessfully()'><b>TC_01_registerToSystemSuccessfully</b><br>Test class: com.liveguru.frontend.Global_RegisterToSystem<br/>
+<a href="#Output-1072506992" onClick='toggleBox("Output-1072506992", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1072506992" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1072506992">
+2019-06-25 23:55:30,027 INFO  com.liveguru.frontend.Global_RegisterToSystem - Register - Step 01: Hover and click to Register link on header
+<br/>
+2019-06-25 23:55:30,732 INFO  com.liveguru.frontend.Global_RegisterToSystem - Register - Step 02: Click to Create an Account
+<br/>
+2019-06-25 23:55:31,143 INFO  com.liveguru.frontend.Global_RegisterToSystem - Register - Step 03: Verify create account page display
+<br/>
+2019-06-25 23:55:31,252 INFO  com.liveguru.frontend.Global_RegisterToSystem - ===PASSED==
+<br/>
+2019-06-25 23:55:31,252 INFO  com.liveguru.frontend.Global_RegisterToSystem - Register - Step 04: Fill in valid information and click Submit
+<br/>
+2019-06-25 23:55:33,430 INFO  com.liveguru.frontend.Global_RegisterToSystem - Register - Step 05: Verify register message display
+<br/>
+2019-06-25 23:55:33,531 INFO  com.liveguru.frontend.Global_RegisterToSystem - Actual = Thank you for registering with Main Website Store.
+<br/>
+2019-06-25 23:55:33,531 INFO  com.liveguru.frontend.Global_RegisterToSystem - Expected = Thank you for registering with Main Website Store.
+<br/>
+2019-06-25 23:55:33,531 INFO  com.liveguru.frontend.Global_RegisterToSystem - Compare value = true
+<br/>
+2019-06-25 23:55:33,532 INFO  com.liveguru.frontend.Global_RegisterToSystem - ===PASSED===
+<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>com.liveguru.frontend.Global_RegisterToSystem@3439f68d</td></tr>
+<tr>
+<td title='com.liveguru.frontend.Global_RegisterToSystem.TC_02_VerifyUserInformation()'><b>TC_02_VerifyUserInformation</b><br>Test class: com.liveguru.frontend.Global_RegisterToSystem<br/>
+<a href="#Output-1517640897" onClick='toggleBox("Output-1517640897", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1517640897" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1517640897">
+2019-06-25 23:55:33,534 INFO  com.liveguru.frontend.Global_RegisterToSystem - Verify User Information - Step 01: Open Account Information page
+<br/>
+2019-06-25 23:55:34,015 INFO  com.liveguru.frontend.Global_RegisterToSystem - Verify User Information - Step 02: Verify firstname
+<br/>
+2019-06-25 23:55:34,110 INFO  com.liveguru.frontend.Global_RegisterToSystem - Actual = Tri
+<br/>
+2019-06-25 23:55:34,110 INFO  com.liveguru.frontend.Global_RegisterToSystem - Expected = Tri
+<br/>
+2019-06-25 23:55:34,110 INFO  com.liveguru.frontend.Global_RegisterToSystem - Compare value = true
+<br/>
+2019-06-25 23:55:34,110 INFO  com.liveguru.frontend.Global_RegisterToSystem - ===PASSED===
+<br/>
+2019-06-25 23:55:34,111 INFO  com.liveguru.frontend.Global_RegisterToSystem - Verify User Information - Step 03: Verify lastname
+<br/>
+2019-06-25 23:55:34,208 INFO  com.liveguru.frontend.Global_RegisterToSystem - Actual = Nguyen
+<br/>
+2019-06-25 23:55:34,208 INFO  com.liveguru.frontend.Global_RegisterToSystem - Expected = Nguyen
+<br/>
+2019-06-25 23:55:34,208 INFO  com.liveguru.frontend.Global_RegisterToSystem - Compare value = true
+<br/>
+2019-06-25 23:55:34,208 INFO  com.liveguru.frontend.Global_RegisterToSystem - ===PASSED===
+<br/>
+2019-06-25 23:55:34,209 INFO  com.liveguru.frontend.Global_RegisterToSystem - Verify User Information - Step 04: Verify email
+<br/>
+2019-06-25 23:55:34,295 INFO  com.liveguru.frontend.Global_RegisterToSystem - Actual = tringuyen57811@gmail.com
+<br/>
+2019-06-25 23:55:34,295 INFO  com.liveguru.frontend.Global_RegisterToSystem - Expected = tringuyen57811@gmail.com
+<br/>
+2019-06-25 23:55:34,295 INFO  com.liveguru.frontend.Global_RegisterToSystem - Compare value = true
+<br/>
+2019-06-25 23:55:34,295 INFO  com.liveguru.frontend.Global_RegisterToSystem - ===PASSED===
+<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.liveguru.frontend.Global_RegisterToSystem@3439f68d</td></tr>
+<tr>
+<td title='com.liveguru.frontend.ProductDetail.TC_03_VerifyPriceMatch()'><b>TC_03_VerifyPriceMatch</b><br>Test class: com.liveguru.frontend.ProductDetail<br/>
+<a href="#Output-1237740254" onClick='toggleBox("Output-1237740254", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1237740254" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1237740254">
+2019-06-25 23:54:52,772 INFO  com.liveguru.frontend.ProductDetail - Check matching product price - Step 01: Click Mobile
+<br/>
+2019-06-25 23:54:53,936 INFO  com.liveguru.frontend.ProductDetail - Check matching product price - Step 02: Get price of product Sony Xperia
+<br/>
+2019-06-25 23:55:09,042 INFO  com.liveguru.frontend.ProductDetail - Check matching product price - Step 03: Go to product detail page
+<br/>
+2019-06-25 23:55:09,681 INFO  com.liveguru.frontend.ProductDetail - Check matching product price - Step 04: Check the product name and price if matched
+<br/>
+2019-06-25 23:55:09,753 INFO  com.liveguru.frontend.ProductDetail - Actual = IPHONE
+<br/>
+2019-06-25 23:55:09,753 INFO  com.liveguru.frontend.ProductDetail - Expected = IPHONE
+<br/>
+2019-06-25 23:55:09,753 INFO  com.liveguru.frontend.ProductDetail - Compare value = true
+<br/>
+2019-06-25 23:55:09,753 INFO  com.liveguru.frontend.ProductDetail - ===PASSED===
+<br/>
+2019-06-25 23:55:24,892 INFO  com.liveguru.frontend.ProductDetail - Actual = $500.00
+<br/>
+2019-06-25 23:55:24,892 INFO  com.liveguru.frontend.ProductDetail - Expected = $500.00
+<br/>
+2019-06-25 23:55:24,892 INFO  com.liveguru.frontend.ProductDetail - Compare value = true
+<br/>
+2019-06-25 23:55:24,892 INFO  com.liveguru.frontend.ProductDetail - ===PASSED===
+<br/>
+</div>
+</td>
+<td></td>
+<td>32</td>
+<td>com.liveguru.frontend.ProductDetail@140e5a13</td></tr>
+<tr>
+<td title='com.liveguru.frontend.Cart.TC_05_AddToCartLimitation()'><b>TC_05_AddToCartLimitation</b><br>Test class: com.liveguru.frontend.Cart<br/>
+<a href="#Output-1388563249" onClick='toggleBox("Output-1388563249", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1388563249" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1388563249">
+2019-06-25 23:55:59,933 INFO  com.liveguru.frontend.Cart - Cart Product Limitation - Step 01: Click on Mobile Menu
+<br/>
+2019-06-25 23:56:01,128 INFO  com.liveguru.frontend.Cart - Cart Product Limitation - Step 02: Click add to Cart
+<br/>
+2019-06-25 23:56:01,960 INFO  com.liveguru.frontend.Cart - Cart Product Limitation - Step 03: Verify the items is added successfully
+<br/>
+2019-06-25 23:56:02,108 INFO  com.liveguru.frontend.Cart - ===PASSED==
+<br/>
+2019-06-25 23:56:02,108 INFO  com.liveguru.frontend.Cart - Cart Product Limitation - Step 04: Change quantity to 501
+<br/>
+2019-06-25 23:56:02,501 INFO  com.liveguru.frontend.Cart - Cart Product Limitation - Step 05: Click update button
+<br/>
+2019-06-25 23:56:03,573 INFO  com.liveguru.frontend.Cart - Cart Product Limitation - Step 06: Check error message display
+<br/>
+2019-06-25 23:56:03,651 INFO  com.liveguru.frontend.Cart - ===PASSED==
+<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>com.liveguru.frontend.Cart@dbd940d</td></tr>
+<tr>
+<td title='com.liveguru.frontend.CompareProduct.TC_06_CompareProduct()'><b>TC_06_CompareProduct</b><br>Test class: com.liveguru.frontend.CompareProduct<br/>
+<a href="#Output-2111457497" onClick='toggleBox("Output-2111457497", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2111457497" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2111457497">
+2019-06-25 23:56:09,681 INFO  com.liveguru.frontend.CompareProduct - Compare 2 products - Step 01: Click on Mobile Menu
+<br/>
+2019-06-25 23:56:10,968 INFO  com.liveguru.frontend.CompareProduct - Compare 2 products - Step 02: Add to Compare first item
+<br/>
+2019-06-25 23:56:12,048 INFO  com.liveguru.frontend.CompareProduct - Compare 2 products - Step 03: Verify first item is in compare waiting list
+<br/>
+2019-06-25 23:56:12,168 INFO  com.liveguru.frontend.CompareProduct - Compare 2 products - Step 04: Add to Compare second item
+<br/>
+2019-06-25 23:56:13,634 INFO  com.liveguru.frontend.CompareProduct - Compare 2 products - Step 05: Verify second item is in compare waiting list
+<br/>
+2019-06-25 23:56:13,860 INFO  com.liveguru.frontend.CompareProduct - Compare 2 products - Step 06: Click compare button
+<br/>
+2019-06-25 23:56:14,571 INFO  com.liveguru.frontend.CompareProduct - Compare 2 products - Step 07: Switch to the popup
+<br/>
+2019-06-25 23:56:14,690 INFO  com.liveguru.frontend.CompareProduct - Compare 2 products - Step 08: Verify if all products are appeared
+<br/>
+2019-06-25 23:56:15,927 INFO  com.liveguru.frontend.CompareProduct - ===PASSED==
+<br/>
+2019-06-25 23:56:15,927 INFO  com.liveguru.frontend.CompareProduct - Compare 2 products - Step 09: Close popup
+<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>com.liveguru.frontend.CompareProduct@71d15f18</td></tr>
+<tr>
+<td title='com.liveguru.frontend.WishList.TC_07_ShareWishList()'><b>TC_07_ShareWishList</b><br>Test class: com.liveguru.frontend.WishList<br/>
+<a href="#Output-1104422581" onClick='toggleBox("Output-1104422581", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1104422581" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1104422581">
+2019-06-25 23:56:42,254 INFO  com.liveguru.frontend.WishList - Share Wishlist - Step 01: Click on TV Menu
+<br/>
+2019-06-25 23:56:43,661 INFO  com.liveguru.frontend.WishList - Share Wishlist - Step 02: Add LG LCD product to wishlist
+<br/>
+2019-06-25 23:56:45,325 INFO  com.liveguru.frontend.WishList - Share Wishlist - Step 03: Verify that product is successfully added to wishlist
+<br/>
+2019-06-25 23:56:45,724 INFO  com.liveguru.frontend.WishList - ===PASSED==
+<br/>
+2019-06-25 23:56:45,725 INFO  com.liveguru.frontend.WishList - Share Wishlist - Step 04: Click share wishlist button
+<br/>
+2019-06-25 23:56:47,143 INFO  com.liveguru.frontend.WishList - Share Wishlist - Step 05: Input email and message
+<br/>
+2019-06-25 23:56:48,382 INFO  com.liveguru.frontend.WishList - Share Wishlist - Step 06: Click share wishlist button
+<br/>
+2019-06-25 23:56:49,706 INFO  com.liveguru.frontend.WishList - Share Wishlist - Step 07: Verify share wishlist message display
+<br/>
+2019-06-25 23:56:50,062 INFO  com.liveguru.frontend.WishList - Actual = Your Wishlist has been shared.
+<br/>
+2019-06-25 23:56:50,062 INFO  com.liveguru.frontend.WishList - Expected = Your Wishlist has been shared.
+<br/>
+2019-06-25 23:56:50,063 INFO  com.liveguru.frontend.WishList - Compare value = true
+<br/>
+2019-06-25 23:56:50,063 INFO  com.liveguru.frontend.WishList - ===PASSED===
+<br/>
+</div>
+</td>
+<td></td>
+<td>7</td>
+<td>com.liveguru.frontend.WishList@6c9f5c0d</td></tr>
+<tr>
+<td title='com.liveguru.frontend.Review.TC_08_AddReview()'><b>TC_08_AddReview</b><br>Test class: com.liveguru.frontend.Review<br/>
+<a href="#Output-1260217713" onClick='toggleBox("Output-1260217713", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1260217713" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1260217713">
+2019-06-25 23:56:22,960 INFO  com.liveguru.frontend.Review - Add Review - Step 01: Open TV
+<br/>
+2019-06-25 23:56:24,025 INFO  com.liveguru.frontend.Review - Add Review - Step 02: Choose Samsung LCD
+<br/>
+2019-06-25 23:56:24,757 INFO  com.liveguru.frontend.Review - Add Review - Step 03: Click to Add review
+<br/>
+2019-06-25 23:56:25,402 INFO  com.liveguru.frontend.Review - Add Review - Step 04: Input to Let us know your thought textbox with a blank
+<br/>
+2019-06-25 23:56:25,725 INFO  com.liveguru.frontend.Review - Add Review - Step 05: Input to summary review textbox with a blank
+<br/>
+2019-06-25 23:56:25,970 INFO  com.liveguru.frontend.Review - Add Review - Step 06: Input to Nickname textbox with a blank
+<br/>
+2019-06-25 23:56:26,204 INFO  com.liveguru.frontend.Review - Add Review - Step 07: Click Submit Review button
+<br/>
+2019-06-25 23:56:26,425 INFO  com.liveguru.frontend.Review - Add Review - Step 08: Verify error message at let us know textbox
+<br/>
+2019-06-25 23:56:26,539 INFO  com.liveguru.frontend.Review - ===PASSED==
+<br/>
+2019-06-25 23:56:26,539 INFO  com.liveguru.frontend.Review - Add Review - Step 09: Verify error message at summary textbox
+<br/>
+2019-06-25 23:56:26,707 INFO  com.liveguru.frontend.Review - ===PASSED==
+<br/>
+2019-06-25 23:56:26,708 INFO  com.liveguru.frontend.Review - Add Review - Step 10: Verify error message at nickname textbox
+<br/>
+2019-06-25 23:56:26,871 INFO  com.liveguru.frontend.Review - ===PASSED==
+<br/>
+2019-06-25 23:56:26,872 INFO  com.liveguru.frontend.Review - Add Review - Step 11: Input to Let us know your thought textbox with proper value
+<br/>
+2019-06-25 23:56:27,131 INFO  com.liveguru.frontend.Review - Add Review - Step 12: Input to summary review textbox with proper value
+<br/>
+2019-06-25 23:56:27,435 INFO  com.liveguru.frontend.Review - Add Review - Step 13: Input to Nickname textbox with proper value
+<br/>
+2019-06-25 23:56:27,637 INFO  com.liveguru.frontend.Review - Add Review - Step 14: Click Submit Review button
+<br/>
+2019-06-25 23:56:28,518 INFO  com.liveguru.frontend.Review - Add Review - Step 15: Verify review success message and its content
+<br/>
+2019-06-25 23:56:28,680 INFO  com.liveguru.frontend.Review - ===PASSED==
+<br/>
+2019-06-25 23:56:28,780 INFO  com.liveguru.frontend.Review - Actual = Your review has been accepted for moderation.
+<br/>
+2019-06-25 23:56:28,780 INFO  com.liveguru.frontend.Review - Expected = Your review has been accepted for moderation.
+<br/>
+2019-06-25 23:56:28,780 INFO  com.liveguru.frontend.Review - Compare value = true
+<br/>
+2019-06-25 23:56:28,780 INFO  com.liveguru.frontend.Review - ===PASSED===
+<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>com.liveguru.frontend.Review@17695df3</td></tr>
+<tr>
+<td title='com.liveguru.frontend.PurchaseProduct.TC_09_PurchaseProduct()'><b>TC_09_PurchaseProduct</b><br>Test class: com.liveguru.frontend.PurchaseProduct<br/>
+<a href="#Output-2023917549" onClick='toggleBox("Output-2023917549", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2023917549" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2023917549">
+2019-06-25 23:57:02,073 INFO  com.liveguru.frontend.PurchaseProduct - Purchase a Product - Step 01: Click to My Wishlist Page
+<br/>
+2019-06-25 23:57:03,128 INFO  com.liveguru.frontend.PurchaseProduct - Purchase a Product - Step 02: Add Samsung LCD from Wishlist Page to Cart
+<br/>
+2019-06-25 23:57:05,046 INFO  com.liveguru.frontend.PurchaseProduct - Purchase a Product - Step 03: Select Canada in Shipping country
+<br/>
+2019-06-25 23:57:05,556 INFO  com.liveguru.frontend.PurchaseProduct - Purchase a Product - Step 04: Select Ontario in Shipping state
+<br/>
+2019-06-25 23:57:06,030 INFO  com.liveguru.frontend.PurchaseProduct - Purchase a Product - Step 05: Input ZIP code
+<br/>
+2019-06-25 23:57:06,484 INFO  com.liveguru.frontend.PurchaseProduct - Purchase a Product - Step 06: Click Estimate button
+<br/>
+2019-06-25 23:57:08,054 INFO  com.liveguru.frontend.PurchaseProduct - Purchase a Product - Step 07: Verify if Shipping method displayed
+<br/>
+2019-06-25 23:57:08,382 INFO  com.liveguru.frontend.PurchaseProduct - ===PASSED==
+<br/>
+2019-06-25 23:57:08,383 INFO  com.liveguru.frontend.PurchaseProduct - Purchase a Product - Step 08: Choose a shipping method (Fixed)
+<br/>
+2019-06-25 23:57:08,942 INFO  com.liveguru.frontend.PurchaseProduct - Purchase a Product - Step 09: Click to Update Total button
+<br/>
+2019-06-25 23:57:10,309 INFO  com.liveguru.frontend.PurchaseProduct - Purchase a Product - Step 10: Verify if Final price is correctly calculated
+<br/>
+2019-06-25 23:57:25,961 INFO  com.liveguru.frontend.PurchaseProduct - Actual = 105.00
+<br/>
+2019-06-25 23:57:25,962 INFO  com.liveguru.frontend.PurchaseProduct - Expected = 105.00
+<br/>
+2019-06-25 23:57:25,962 INFO  com.liveguru.frontend.PurchaseProduct - Compare value = true
+<br/>
+2019-06-25 23:57:25,962 INFO  com.liveguru.frontend.PurchaseProduct - ===PASSED===
+<br/>
+2019-06-25 23:57:25,962 INFO  com.liveguru.frontend.PurchaseProduct - Purchase a Product - Step 11: Click to Proceed to Checkout button
+<br/>
+2019-06-25 23:57:26,741 INFO  com.liveguru.frontend.PurchaseProduct - Purchase a Product - Step 12: VP - Verify if Billing Information section is active
+<br/>
+2019-06-25 23:57:26,816 INFO  com.liveguru.frontend.PurchaseProduct - ===PASSED==
+<br/>
+2019-06-25 23:57:26,872 INFO  com.liveguru.frontend.PurchaseProduct - Purchase a Product - Step 13: Input Billing Information
+<br/>
+2019-06-25 23:57:31,056 INFO  com.liveguru.frontend.PurchaseProduct - Purchase a Product - Step 14: Click Continue button
+<br/>
+2019-06-25 23:57:31,242 INFO  com.liveguru.frontend.PurchaseProduct - Purchase a Product - Step 15: VP - Verify if Shipping Information section is active
+<br/>
+2019-06-25 23:57:31,307 INFO  com.liveguru.frontend.PurchaseProduct - ===PASSED==
+<br/>
+2019-06-25 23:57:31,307 INFO  com.liveguru.frontend.PurchaseProduct - Purchase a Product - Step 16: Input Shipping Information
+<br/>
+2019-06-25 23:57:35,945 INFO  com.liveguru.frontend.PurchaseProduct - Purchase a Product - Step 17: Click Continue button
+<br/>
+2019-06-25 23:57:36,182 INFO  com.liveguru.frontend.PurchaseProduct - Purchase a Product - Step 18: VP - Verify if Shipping Method section is active
+<br/>
+2019-06-25 23:57:36,691 INFO  com.liveguru.frontend.PurchaseProduct - ===PASSED==
+<br/>
+2019-06-25 23:57:36,691 INFO  com.liveguru.frontend.PurchaseProduct - Purchase a Product - Step 19: Click Continue
+<br/>
+2019-06-25 23:57:36,910 INFO  com.liveguru.frontend.PurchaseProduct - Purchase a Product - Step 20: VP - Verify if Payment Information section is active
+<br/>
+2019-06-25 23:57:37,210 INFO  com.liveguru.frontend.PurchaseProduct - ===PASSED==
+<br/>
+2019-06-25 23:57:37,211 INFO  com.liveguru.frontend.PurchaseProduct - Purchase a Product - Step 21: Check to Payment option
+<br/>
+2019-06-25 23:57:37,574 INFO  com.liveguru.frontend.PurchaseProduct - Purchase a Product - Step 22: Click Continue
+<br/>
+2019-06-25 23:57:37,900 INFO  com.liveguru.frontend.PurchaseProduct - Purchase a Product - Step 23: VP - Verify if Order Review section is active
+<br/>
+2019-06-25 23:57:38,317 INFO  com.liveguru.frontend.PurchaseProduct - ===PASSED==
+<br/>
+2019-06-25 23:57:38,318 INFO  com.liveguru.frontend.PurchaseProduct - Purchase a Product - Step 24: Click place order button
+<br/>
+2019-06-25 23:57:38,748 INFO  com.liveguru.frontend.PurchaseProduct - Purchase a Product - Step 25: VP - Verify order is generated
+<br/>
+2019-06-25 23:57:39,951 INFO  com.liveguru.frontend.PurchaseProduct - ===PASSED==
+<br/>
+</div>
+</td>
+<td></td>
+<td>38</td>
+<td>com.liveguru.frontend.PurchaseProduct@de3a06f</td></tr>
+<tr>
+<td title='com.liveguru.frontend.SearchFunction.TC_10_SearchFunction()'><b>TC_10_SearchFunction</b><br>Test class: com.liveguru.frontend.SearchFunction<br/>
+<a href="#Output-365056339" onClick='toggleBox("Output-365056339", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-365056339" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-365056339">
+2019-06-25 23:57:48,530 INFO  com.liveguru.frontend.SearchFunction - Search Function - Step 03: Enter range from 0 - 150 in price field and click Search
+<br/>
+2019-06-25 23:57:49,318 INFO  com.liveguru.frontend.SearchFunction - Search Function - Step 04: Enter range from 0 - 150 in price field and click Search
+<br/>
+2019-06-25 23:57:49,894 INFO  com.liveguru.frontend.SearchFunction - Search Function - Step 05: Click Search
+<br/>
+2019-06-25 23:57:51,239 INFO  com.liveguru.frontend.SearchFunction - Search Function - Step 06: Verify products displayed
+<br/>
+2019-06-25 23:57:51,929 INFO  com.liveguru.frontend.SearchFunction - ===PASSED==
+<br/>
+2019-06-25 23:57:51,930 INFO  com.liveguru.frontend.SearchFunction - Search Function - Step 07: Click to Modify your search
+<br/>
+2019-06-25 23:57:52,945 INFO  com.liveguru.frontend.SearchFunction - Search Function - Step 08: Enter range from 151 - 1000 in price field and click Search
+<br/>
+2019-06-25 23:57:53,553 INFO  com.liveguru.frontend.SearchFunction - Search Function - Step 09: Enter range from 151 - 1000 in price field and click Search
+<br/>
+2019-06-25 23:57:54,154 INFO  com.liveguru.frontend.SearchFunction - Search Function - Step 10: Click Search
+<br/>
+2019-06-25 23:57:55,263 INFO  com.liveguru.frontend.SearchFunction - Search Function - Step 11: Verify products displayed
+<br/>
+2019-06-25 23:57:56,065 INFO  com.liveguru.frontend.SearchFunction - ===PASSED==
+<br/>
+</div>
+</td>
+<td></td>
+<td>7</td>
+<td>com.liveguru.frontend.SearchFunction@76b10754</td></tr>
+</table><p>
+</body>
+</html>

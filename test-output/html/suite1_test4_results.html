@@ -1,0 +1,1029 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="" lang="">
+<head>
+  <title>Test Results Report - Run test on IE browser</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="description" content="TestNG unit test results." />
+  <link href="reportng.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="reportng.js"></script>
+</head>
+<body>
+<h1>Run test on IE browser</h1>
+<p>
+  Test duration: 185.593s
+</p>
+
+  <table class="resultsTable configTable">
+    <tr><th colspan="3" class="header failedConfig">Failed Configuration</th></tr>
+              <tr class="group">
+        <td colspan="3">com.liveguru.frontend.PurchaseProduct</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  beforeClass
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">"ie", ".\testdata\com\liveguru\purchase\ShippingAddress.json"</span><br />
+    
+        
+
+        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //input[@title=&apos;Email Address&apos;] (tried for 30 second(s) with 500 MILLISECONDS interval)</b></a><br />
+    <div class="stackTrace" id="exception-0">
+              org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:82)<br />
+              org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)<br />
+              com.liveguru.commons.AbstractPage.waitForElementVisible(AbstractPage.java:579)<br />
+              com.liveguru.objects.LoginPageObjects.doLogin(LoginPageObjects.java:36)<br />
+              com.liveguru.frontend.PurchaseProduct.beforeClass(PurchaseProduct.java:42)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br />
+              java.lang.reflect.Method.invoke(Unknown Source)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)<br />
+              org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:510)<br />
+              org.testng.internal.Invoker.invokeConfigurations(Invoker.java:211)<br />
+              org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)<br />
+              org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:170)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:104)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:774)<br />
+              org.testng.TestRunner.run(TestRunner.java:624)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:359)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:261)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1140)<br />
+              org.testng.TestNG.run(TestNG.java:1048)<br />
+              org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)<br />
+              org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)<br />
+              org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)<br />
+                    <b>Caused by: </b> <a href="javascript:toggleElement('exception-1', 'block')" title="Click to expand/collapse">org.openqa.selenium.NoSuchWindowException: Currently focused window has been closed.<br/>
+Build info: version: &apos;3.9.1&apos;, revision: &apos;63f7b50&apos;, time: &apos;2018-02-07T22:42:28.403Z&apos;<br/>
+System info: host: &apos;DESKTOP-4H2CDN2&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;<br/>
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver<br/>
+Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:32517/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}<br/>
+Session ID: dadf9c27-1045-4d4e-a867-8003ff3734f6<br/>
+*** Element info: {Using=xpath, value=//input[@title=&apos;Email Address&apos;]}</a><br />
+        <div class="stackTrace" id="exception-1">
+                      sun.reflect.GeneratedConstructorAccessor26.newInstance(Unknown Source)<br />
+                      sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)<br />
+                      java.lang.reflect.Constructor.newInstance(Unknown Source)<br />
+                      org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)<br />
+                      org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)<br />
+                      org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)<br />
+                      org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)<br />
+                      org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:398)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.findElementsByXPath(RemoteWebDriver.java:477)<br />
+                      org.openqa.selenium.By$ByXPath.findElements(By.java:356)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:359)<br />
+                      org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)<br />
+                      org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)<br />
+                      org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)<br />
+                      org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)<br />
+                      org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)<br />
+                      com.liveguru.commons.AbstractPage.waitForElementVisible(AbstractPage.java:579)<br />
+                      com.liveguru.objects.LoginPageObjects.doLogin(LoginPageObjects.java:36)<br />
+                      com.liveguru.frontend.PurchaseProduct.beforeClass(PurchaseProduct.java:42)<br />
+                      sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+                      sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br />
+                      sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br />
+                      java.lang.reflect.Method.invoke(Unknown Source)<br />
+                      org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)<br />
+                      org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:510)<br />
+                      org.testng.internal.Invoker.invokeConfigurations(Invoker.java:211)<br />
+                      org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)<br />
+                      org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:170)<br />
+                      org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:104)<br />
+                      org.testng.TestRunner.privateRun(TestRunner.java:774)<br />
+                      org.testng.TestRunner.run(TestRunner.java:624)<br />
+                      org.testng.SuiteRunner.runTest(SuiteRunner.java:359)<br />
+                      org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)<br />
+                      org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)<br />
+                      org.testng.SuiteRunner.run(SuiteRunner.java:261)<br />
+                      org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+                      org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br />
+                      org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)<br />
+                      org.testng.TestNG.runSuitesLocally(TestNG.java:1140)<br />
+                      org.testng.TestNG.run(TestNG.java:1048)<br />
+                      org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)<br />
+                      org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)<br />
+                      org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)<br />
+                  </div>
+          </div>
+      </td>
+</tr>
+          <tr class="group">
+        <td colspan="3">com.liveguru.frontend.WishList</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  beforeClass
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">"ie"</span><br />
+    
+        
+
+        <a href="javascript:toggleElement('exception-2', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //input[@title=&apos;Email Address&apos;] (tried for 30 second(s) with 500 MILLISECONDS interval)</b></a><br />
+    <div class="stackTrace" id="exception-2">
+              org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:82)<br />
+              org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)<br />
+              com.liveguru.commons.AbstractPage.waitForElementVisible(AbstractPage.java:579)<br />
+              com.liveguru.objects.LoginPageObjects.doLogin(LoginPageObjects.java:36)<br />
+              com.liveguru.frontend.WishList.beforeClass(WishList.java:34)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br />
+              java.lang.reflect.Method.invoke(Unknown Source)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)<br />
+              org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:510)<br />
+              org.testng.internal.Invoker.invokeConfigurations(Invoker.java:211)<br />
+              org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)<br />
+              org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:170)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:104)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:774)<br />
+              org.testng.TestRunner.run(TestRunner.java:624)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:359)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:261)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1140)<br />
+              org.testng.TestNG.run(TestNG.java:1048)<br />
+              org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)<br />
+              org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)<br />
+              org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)<br />
+                    <b>Caused by: </b> <a href="javascript:toggleElement('exception-3', 'block')" title="Click to expand/collapse">org.openqa.selenium.NoSuchWindowException: Currently focused window has been closed.<br/>
+Build info: version: &apos;3.9.1&apos;, revision: &apos;63f7b50&apos;, time: &apos;2018-02-07T22:42:28.403Z&apos;<br/>
+System info: host: &apos;DESKTOP-4H2CDN2&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;<br/>
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver<br/>
+Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:23010/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}<br/>
+Session ID: 237d2b9f-fba3-4c73-bc9e-f59f3a7f1190<br/>
+*** Element info: {Using=xpath, value=//input[@title=&apos;Email Address&apos;]}</a><br />
+        <div class="stackTrace" id="exception-3">
+                      sun.reflect.GeneratedConstructorAccessor26.newInstance(Unknown Source)<br />
+                      sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)<br />
+                      java.lang.reflect.Constructor.newInstance(Unknown Source)<br />
+                      org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)<br />
+                      org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)<br />
+                      org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)<br />
+                      org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)<br />
+                      org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:398)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.findElementsByXPath(RemoteWebDriver.java:477)<br />
+                      org.openqa.selenium.By$ByXPath.findElements(By.java:356)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:359)<br />
+                      org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)<br />
+                      org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)<br />
+                      org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)<br />
+                      org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)<br />
+                      org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)<br />
+                      com.liveguru.commons.AbstractPage.waitForElementVisible(AbstractPage.java:579)<br />
+                      com.liveguru.objects.LoginPageObjects.doLogin(LoginPageObjects.java:36)<br />
+                      com.liveguru.frontend.WishList.beforeClass(WishList.java:34)<br />
+                      sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+                      sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br />
+                      sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br />
+                      java.lang.reflect.Method.invoke(Unknown Source)<br />
+                      org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)<br />
+                      org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:510)<br />
+                      org.testng.internal.Invoker.invokeConfigurations(Invoker.java:211)<br />
+                      org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)<br />
+                      org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:170)<br />
+                      org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:104)<br />
+                      org.testng.TestRunner.privateRun(TestRunner.java:774)<br />
+                      org.testng.TestRunner.run(TestRunner.java:624)<br />
+                      org.testng.SuiteRunner.runTest(SuiteRunner.java:359)<br />
+                      org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)<br />
+                      org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)<br />
+                      org.testng.SuiteRunner.run(SuiteRunner.java:261)<br />
+                      org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+                      org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br />
+                      org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)<br />
+                      org.testng.TestNG.runSuitesLocally(TestNG.java:1140)<br />
+                      org.testng.TestNG.run(TestNG.java:1048)<br />
+                      org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)<br />
+                      org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)<br />
+                      org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)<br />
+                  </div>
+          </div>
+      </td>
+</tr>
+    
+          <tr><td colspan="3">&nbsp;</td></tr>
+      <tr><td colspan="3" class="header skippedConfig">Skipped Configuration</td></tr>
+                    <tr>
+          <td colspan="3" class="group">com.liveguru.frontend.PurchaseProduct</td>
+        </tr>
+                
+<tr>
+  <td class="method">
+                  afterClass
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+              <tr>
+          <td colspan="3" class="group">com.liveguru.frontend.WishList</td>
+        </tr>
+                
+<tr>
+  <td class="method">
+                  afterClass
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+            </table>
+
+
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header failed">Failed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">com.liveguru.frontend.Cart</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  TC_04_ApplyCoupon
+      </td>
+  <td class="duration">
+    16.770s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        2019-06-26 00:07:13,938 INFO&nbsp; com.liveguru.frontend.Cart - Apply Coupon - Step 01: Click on Mobile Menu<br/>
+<br />
+                                2019-06-26 00:07:15,417 INFO&nbsp; com.liveguru.frontend.Cart - Apply Coupon - Step 02: Add item to Cart<br/>
+<br />
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-2', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //h2[@class = &apos;product-name&apos;]//a[text() = &apos;IPhone&apos;]//ancestor-or-self::h2/following-sibling::div[@class=&apos;actions&apos;]/button (tried for 10 second(s) with 500 MILLISECONDS interval)</b></a><br />
+    <div class="stackTrace" id="exception-2">
+              org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:82)<br />
+              org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)<br />
+              com.liveguru.commons.AbstractPage.waitForElementVisible(AbstractPage.java:587)<br />
+              com.liveguru.objects.ProductListPageObjects.addItemToCart(ProductListPageObjects.java:30)<br />
+              com.liveguru.frontend.Cart.TC_04_ApplyCoupon(Cart.java:35)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br />
+              java.lang.reflect.Method.invoke(Unknown Source)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:639)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:774)<br />
+              org.testng.TestRunner.run(TestRunner.java:624)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:359)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:261)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1140)<br />
+              org.testng.TestNG.run(TestNG.java:1048)<br />
+              org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)<br />
+              org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)<br />
+              org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)<br />
+                    <b>Caused by: </b> <a href="javascript:toggleElement('exception-3', 'block')" title="Click to expand/collapse">org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.xpath: //h2[@class = &apos;product-name&apos;]//a[text() = &apos;IPhone&apos;]//ancestor-or-self::h2/following-sibling::div[@class=&apos;actions&apos;]/button<br/>
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br/>
+Build info: version: &apos;3.9.1&apos;, revision: &apos;63f7b50&apos;, time: &apos;2018-02-07T22:42:28.403Z&apos;<br/>
+System info: host: &apos;DESKTOP-4H2CDN2&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;<br/>
+Driver info: driver.version: unknown</a><br />
+        <div class="stackTrace" id="exception-3">
+                      org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)<br />
+                      java.util.Optional.orElseThrow(Unknown Source)<br />
+                      org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)<br />
+                      org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)<br />
+                      org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)<br />
+                      org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)<br />
+                      org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)<br />
+                      com.liveguru.commons.AbstractPage.waitForElementVisible(AbstractPage.java:587)<br />
+                      com.liveguru.objects.ProductListPageObjects.addItemToCart(ProductListPageObjects.java:30)<br />
+                      com.liveguru.frontend.Cart.TC_04_ApplyCoupon(Cart.java:35)<br />
+                      sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+                      sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br />
+                      sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br />
+                      java.lang.reflect.Method.invoke(Unknown Source)<br />
+                      org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)<br />
+                      org.testng.internal.Invoker.invokeMethod(Invoker.java:639)<br />
+                      org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)<br />
+                      org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)<br />
+                      org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)<br />
+                      org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)<br />
+                      org.testng.TestRunner.privateRun(TestRunner.java:774)<br />
+                      org.testng.TestRunner.run(TestRunner.java:624)<br />
+                      org.testng.SuiteRunner.runTest(SuiteRunner.java:359)<br />
+                      org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)<br />
+                      org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)<br />
+                      org.testng.SuiteRunner.run(SuiteRunner.java:261)<br />
+                      org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+                      org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br />
+                      org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)<br />
+                      org.testng.TestNG.runSuitesLocally(TestNG.java:1140)<br />
+                      org.testng.TestNG.run(TestNG.java:1048)<br />
+                      org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)<br />
+                      org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)<br />
+                      org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)<br />
+                  </div>
+          </div>
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  TC_05_AddToCartLimitation
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        2019-06-26 00:07:30,706 INFO&nbsp; com.liveguru.frontend.Cart - Cart Product Limitation - Step 01: Click on Mobile Menu<br/>
+<br />
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-4', 'block')" title="Click to expand/collapse"><b>java.lang.NullPointerException</b></a><br />
+    <div class="stackTrace" id="exception-4">
+              com.liveguru.frontend.Cart.TC_05_AddToCartLimitation(Cart.java:50)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br />
+              java.lang.reflect.Method.invoke(Unknown Source)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:639)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:774)<br />
+              org.testng.TestRunner.run(TestRunner.java:624)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:359)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:261)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1140)<br />
+              org.testng.TestNG.run(TestNG.java:1048)<br />
+              org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)<br />
+              org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)<br />
+              org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)<br />
+                </div>
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">com.liveguru.frontend.CompareProduct</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  TC_06_CompareProduct
+      </td>
+  <td class="duration">
+    16.779s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        2019-06-26 00:07:34,217 INFO&nbsp; com.liveguru.frontend.CompareProduct - Compare 2 products - Step 01: Click on Mobile Menu<br/>
+<br />
+                                2019-06-26 00:07:35,851 INFO&nbsp; com.liveguru.frontend.CompareProduct - Compare 2 products - Step 02: Add to Compare first item<br/>
+<br />
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-5', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //a[text() = &apos;Sony Xperia&apos;]//ancestor-or-self::h2/following-sibling::div[@class = &apos;actions&apos;]//a[text() = &apos;Add to Compare&apos;] (tried for 10 second(s) with 500 MILLISECONDS interval)</b></a><br />
+    <div class="stackTrace" id="exception-5">
+              org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:82)<br />
+              org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)<br />
+              com.liveguru.commons.AbstractPage.waitForElementVisible(AbstractPage.java:587)<br />
+              com.liveguru.objects.ProductListPageObjects.addToCompare(ProductListPageObjects.java:36)<br />
+              com.liveguru.frontend.CompareProduct.TC_06_CompareProduct(CompareProduct.java:38)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br />
+              java.lang.reflect.Method.invoke(Unknown Source)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:639)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:774)<br />
+              org.testng.TestRunner.run(TestRunner.java:624)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:359)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:261)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1140)<br />
+              org.testng.TestNG.run(TestNG.java:1048)<br />
+              org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)<br />
+              org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)<br />
+              org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)<br />
+                    <b>Caused by: </b> <a href="javascript:toggleElement('exception-6', 'block')" title="Click to expand/collapse">org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.xpath: //a[text() = &apos;Sony Xperia&apos;]//ancestor-or-self::h2/following-sibling::div[@class = &apos;actions&apos;]//a[text() = &apos;Add to Compare&apos;]<br/>
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br/>
+Build info: version: &apos;3.9.1&apos;, revision: &apos;63f7b50&apos;, time: &apos;2018-02-07T22:42:28.403Z&apos;<br/>
+System info: host: &apos;DESKTOP-4H2CDN2&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;<br/>
+Driver info: driver.version: unknown</a><br />
+        <div class="stackTrace" id="exception-6">
+                      org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)<br />
+                      java.util.Optional.orElseThrow(Unknown Source)<br />
+                      org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)<br />
+                      org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)<br />
+                      org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)<br />
+                      org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)<br />
+                      org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)<br />
+                      com.liveguru.commons.AbstractPage.waitForElementVisible(AbstractPage.java:587)<br />
+                      com.liveguru.objects.ProductListPageObjects.addToCompare(ProductListPageObjects.java:36)<br />
+                      com.liveguru.frontend.CompareProduct.TC_06_CompareProduct(CompareProduct.java:38)<br />
+                      sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+                      sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br />
+                      sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br />
+                      java.lang.reflect.Method.invoke(Unknown Source)<br />
+                      org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)<br />
+                      org.testng.internal.Invoker.invokeMethod(Invoker.java:639)<br />
+                      org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)<br />
+                      org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)<br />
+                      org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)<br />
+                      org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)<br />
+                      org.testng.TestRunner.privateRun(TestRunner.java:774)<br />
+                      org.testng.TestRunner.run(TestRunner.java:624)<br />
+                      org.testng.SuiteRunner.runTest(SuiteRunner.java:359)<br />
+                      org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)<br />
+                      org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)<br />
+                      org.testng.SuiteRunner.run(SuiteRunner.java:261)<br />
+                      org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+                      org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br />
+                      org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)<br />
+                      org.testng.TestNG.runSuitesLocally(TestNG.java:1140)<br />
+                      org.testng.TestNG.run(TestNG.java:1048)<br />
+                      org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)<br />
+                      org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)<br />
+                      org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)<br />
+                  </div>
+          </div>
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">com.liveguru.frontend.Global_RegisterToSystem</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  TC_01_registerToSystemSuccessfully
+      </td>
+  <td class="duration">
+    17.643s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        2019-06-26 00:06:52,664 INFO&nbsp; com.liveguru.frontend.Global_RegisterToSystem - Register - Step 01: Hover and click to Register link on header<br/>
+<br />
+                                2019-06-26 00:06:55,099 INFO&nbsp; com.liveguru.frontend.Global_RegisterToSystem - Register - Step 02: Click to Create an Account<br/>
+<br />
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-7', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //div[@class = &apos;buttons-set&apos;]//span[text() = &apos;Create an Account&apos;] (tried for 10 second(s) with 500 MILLISECONDS interval)</b></a><br />
+    <div class="stackTrace" id="exception-7">
+              org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:82)<br />
+              org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)<br />
+              com.liveguru.commons.AbstractPage.waitForElementVisible(AbstractPage.java:587)<br />
+              com.liveguru.objects.LoginPageObjects.clickToButton(LoginPageObjects.java:22)<br />
+              com.liveguru.frontend.Global_RegisterToSystem.TC_01_registerToSystemSuccessfully(Global_RegisterToSystem.java:54)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br />
+              java.lang.reflect.Method.invoke(Unknown Source)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:639)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:774)<br />
+              org.testng.TestRunner.run(TestRunner.java:624)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:359)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:261)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1140)<br />
+              org.testng.TestNG.run(TestNG.java:1048)<br />
+              org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)<br />
+              org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)<br />
+              org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)<br />
+                    <b>Caused by: </b> <a href="javascript:toggleElement('exception-8', 'block')" title="Click to expand/collapse">org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.xpath: //div[@class = &apos;buttons-set&apos;]//span[text() = &apos;Create an Account&apos;]<br/>
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br/>
+Build info: version: &apos;3.9.1&apos;, revision: &apos;63f7b50&apos;, time: &apos;2018-02-07T22:42:28.403Z&apos;<br/>
+System info: host: &apos;DESKTOP-4H2CDN2&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;<br/>
+Driver info: driver.version: unknown</a><br />
+        <div class="stackTrace" id="exception-8">
+                      org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)<br />
+                      java.util.Optional.orElseThrow(Unknown Source)<br />
+                      org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)<br />
+                      org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)<br />
+                      org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)<br />
+                      org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)<br />
+                      org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)<br />
+                      com.liveguru.commons.AbstractPage.waitForElementVisible(AbstractPage.java:587)<br />
+                      com.liveguru.objects.LoginPageObjects.clickToButton(LoginPageObjects.java:22)<br />
+                      com.liveguru.frontend.Global_RegisterToSystem.TC_01_registerToSystemSuccessfully(Global_RegisterToSystem.java:54)<br />
+                      sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+                      sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br />
+                      sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br />
+                      java.lang.reflect.Method.invoke(Unknown Source)<br />
+                      org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)<br />
+                      org.testng.internal.Invoker.invokeMethod(Invoker.java:639)<br />
+                      org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)<br />
+                      org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)<br />
+                      org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)<br />
+                      org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)<br />
+                      org.testng.TestRunner.privateRun(TestRunner.java:774)<br />
+                      org.testng.TestRunner.run(TestRunner.java:624)<br />
+                      org.testng.SuiteRunner.runTest(SuiteRunner.java:359)<br />
+                      org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)<br />
+                      org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)<br />
+                      org.testng.SuiteRunner.run(SuiteRunner.java:261)<br />
+                      org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+                      org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br />
+                      org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)<br />
+                      org.testng.TestNG.runSuitesLocally(TestNG.java:1140)<br />
+                      org.testng.TestNG.run(TestNG.java:1048)<br />
+                      org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)<br />
+                      org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)<br />
+                      org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)<br />
+                  </div>
+          </div>
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  TC_02_VerifyUserInformation
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        2019-06-26 00:07:10,307 INFO&nbsp; com.liveguru.frontend.Global_RegisterToSystem - Verify User Information - Step 01: Open Account Information page<br/>
+<br />
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-9', 'block')" title="Click to expand/collapse"><b>java.lang.NullPointerException</b></a><br />
+    <div class="stackTrace" id="exception-9">
+              com.liveguru.frontend.Global_RegisterToSystem.TC_02_VerifyUserInformation(Global_RegisterToSystem.java:76)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br />
+              java.lang.reflect.Method.invoke(Unknown Source)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:639)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:774)<br />
+              org.testng.TestRunner.run(TestRunner.java:624)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:359)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:261)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1140)<br />
+              org.testng.TestNG.run(TestNG.java:1048)<br />
+              org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)<br />
+              org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)<br />
+              org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)<br />
+                </div>
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">com.liveguru.frontend.ProductDetail</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  TC_03_VerifyPriceMatch
+      </td>
+  <td class="duration">
+    47.415s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        2019-06-26 00:06:01,944 INFO&nbsp; com.liveguru.frontend.ProductDetail - Check matching product price - Step 01: Click Mobile<br/>
+<br />
+                                2019-06-26 00:06:03,820 INFO&nbsp; com.liveguru.frontend.ProductDetail - Check matching product price - Step 02: Get price of product Sony Xperia<br/>
+<br />
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-10', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //a[text() = &apos;IPhone&apos;]//ancestor-or-self::h2/following-sibling::div/span/span (tried for 30 second(s) with 500 MILLISECONDS interval)</b></a><br />
+    <div class="stackTrace" id="exception-10">
+              org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:82)<br />
+              org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)<br />
+              com.liveguru.commons.AbstractPage.getTextElement(AbstractPage.java:212)<br />
+              com.liveguru.objects.ProductListPageObjects.getProductPrice(ProductListPageObjects.java:85)<br />
+              com.liveguru.frontend.ProductDetail.TC_03_VerifyPriceMatch(ProductDetail.java:36)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br />
+              java.lang.reflect.Method.invoke(Unknown Source)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:639)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:774)<br />
+              org.testng.TestRunner.run(TestRunner.java:624)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:359)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:261)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1140)<br />
+              org.testng.TestNG.run(TestNG.java:1048)<br />
+              org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)<br />
+              org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)<br />
+              org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)<br />
+                    <b>Caused by: </b> <a href="javascript:toggleElement('exception-11', 'block')" title="Click to expand/collapse">org.openqa.selenium.NoSuchWindowException: Currently focused window has been closed.<br/>
+Build info: version: &apos;3.9.1&apos;, revision: &apos;63f7b50&apos;, time: &apos;2018-02-07T22:42:28.403Z&apos;<br/>
+System info: host: &apos;DESKTOP-4H2CDN2&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;<br/>
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver<br/>
+Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:32119/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}<br/>
+Session ID: ed27b2ef-3788-44f1-90f9-8f242e726f6e<br/>
+*** Element info: {Using=xpath, value=//a[text() = &apos;IPhone&apos;]//ancestor-or-self::h2/following-sibling::div/span/span}</a><br />
+        <div class="stackTrace" id="exception-11">
+                      sun.reflect.GeneratedConstructorAccessor26.newInstance(Unknown Source)<br />
+                      sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)<br />
+                      java.lang.reflect.Constructor.newInstance(Unknown Source)<br />
+                      org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)<br />
+                      org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)<br />
+                      org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)<br />
+                      org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)<br />
+                      org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:398)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.findElementsByXPath(RemoteWebDriver.java:477)<br />
+                      org.openqa.selenium.By$ByXPath.findElements(By.java:356)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:359)<br />
+                      org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)<br />
+                      org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)<br />
+                      org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)<br />
+                      org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)<br />
+                      org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)<br />
+                      com.liveguru.commons.AbstractPage.getTextElement(AbstractPage.java:212)<br />
+                      com.liveguru.objects.ProductListPageObjects.getProductPrice(ProductListPageObjects.java:85)<br />
+                      com.liveguru.frontend.ProductDetail.TC_03_VerifyPriceMatch(ProductDetail.java:36)<br />
+                      sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+                      sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br />
+                      sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br />
+                      java.lang.reflect.Method.invoke(Unknown Source)<br />
+                      org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)<br />
+                      org.testng.internal.Invoker.invokeMethod(Invoker.java:639)<br />
+                      org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)<br />
+                      org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)<br />
+                      org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)<br />
+                      org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)<br />
+                      org.testng.TestRunner.privateRun(TestRunner.java:774)<br />
+                      org.testng.TestRunner.run(TestRunner.java:624)<br />
+                      org.testng.SuiteRunner.runTest(SuiteRunner.java:359)<br />
+                      org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)<br />
+                      org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)<br />
+                      org.testng.SuiteRunner.run(SuiteRunner.java:261)<br />
+                      org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+                      org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br />
+                      org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)<br />
+                      org.testng.TestNG.runSuitesLocally(TestNG.java:1140)<br />
+                      org.testng.TestNG.run(TestNG.java:1048)<br />
+                      org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)<br />
+                      org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)<br />
+                      org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)<br />
+                  </div>
+          </div>
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">com.liveguru.frontend.Review</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  TC_08_AddReview
+      </td>
+  <td class="duration">
+    32.129s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        2019-06-26 00:07:55,118 INFO&nbsp; com.liveguru.frontend.Review - Add Review - Step 01: Open TV<br/>
+<br />
+                                2019-06-26 00:07:57,099 INFO&nbsp; com.liveguru.frontend.Review - Add Review - Step 02: Choose Samsung LCD<br/>
+<br />
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-12', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //h2[@class=&apos;product-name&apos;]/a[text() = &apos;Samsung LCD&apos;] (tried for 30 second(s) with 500 MILLISECONDS interval)</b></a><br />
+    <div class="stackTrace" id="exception-12">
+              org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:82)<br />
+              org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)<br />
+              com.liveguru.commons.AbstractPage.clickToElement(AbstractPage.java:94)<br />
+              com.liveguru.objects.ProductListPageObjects.goToProductDetail(ProductListPageObjects.java:25)<br />
+              com.liveguru.frontend.Review.TC_08_AddReview(Review.java:44)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br />
+              java.lang.reflect.Method.invoke(Unknown Source)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:639)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:774)<br />
+              org.testng.TestRunner.run(TestRunner.java:624)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:359)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:261)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1140)<br />
+              org.testng.TestNG.run(TestNG.java:1048)<br />
+              org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)<br />
+              org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)<br />
+              org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)<br />
+                    <b>Caused by: </b> <a href="javascript:toggleElement('exception-13', 'block')" title="Click to expand/collapse">org.openqa.selenium.NoSuchWindowException: Currently focused window has been closed.<br/>
+Build info: version: &apos;3.9.1&apos;, revision: &apos;63f7b50&apos;, time: &apos;2018-02-07T22:42:28.403Z&apos;<br/>
+System info: host: &apos;DESKTOP-4H2CDN2&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;<br/>
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver<br/>
+Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:25476/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}<br/>
+Session ID: 2093e556-6c69-40ea-8e47-f5b4d9baec71<br/>
+*** Element info: {Using=xpath, value=//h2[@class=&apos;product-name&apos;]/a[text() = &apos;Samsung LCD&apos;]}</a><br />
+        <div class="stackTrace" id="exception-13">
+                      sun.reflect.GeneratedConstructorAccessor26.newInstance(Unknown Source)<br />
+                      sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)<br />
+                      java.lang.reflect.Constructor.newInstance(Unknown Source)<br />
+                      org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)<br />
+                      org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)<br />
+                      org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)<br />
+                      org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)<br />
+                      org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:398)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.findElementsByXPath(RemoteWebDriver.java:477)<br />
+                      org.openqa.selenium.By$ByXPath.findElements(By.java:356)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:359)<br />
+                      org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)<br />
+                      org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)<br />
+                      org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)<br />
+                      org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)<br />
+                      org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)<br />
+                      com.liveguru.commons.AbstractPage.clickToElement(AbstractPage.java:94)<br />
+                      com.liveguru.objects.ProductListPageObjects.goToProductDetail(ProductListPageObjects.java:25)<br />
+                      com.liveguru.frontend.Review.TC_08_AddReview(Review.java:44)<br />
+                      sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+                      sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br />
+                      sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br />
+                      java.lang.reflect.Method.invoke(Unknown Source)<br />
+                      org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)<br />
+                      org.testng.internal.Invoker.invokeMethod(Invoker.java:639)<br />
+                      org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)<br />
+                      org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)<br />
+                      org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)<br />
+                      org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)<br />
+                      org.testng.TestRunner.privateRun(TestRunner.java:774)<br />
+                      org.testng.TestRunner.run(TestRunner.java:624)<br />
+                      org.testng.SuiteRunner.runTest(SuiteRunner.java:359)<br />
+                      org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)<br />
+                      org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)<br />
+                      org.testng.SuiteRunner.run(SuiteRunner.java:261)<br />
+                      org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+                      org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br />
+                      org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)<br />
+                      org.testng.TestNG.runSuitesLocally(TestNG.java:1140)<br />
+                      org.testng.TestNG.run(TestNG.java:1048)<br />
+                      org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)<br />
+                      org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)<br />
+                      org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)<br />
+                  </div>
+          </div>
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">com.liveguru.frontend.SearchFunction</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  TC_10_SearchFunction
+      </td>
+  <td class="duration">
+    30.065s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        2019-06-26 00:09:45,752 INFO&nbsp; com.liveguru.frontend.SearchFunction - Search Function - Step 03: Enter range from 0 - 150 in price field and click Search<br/>
+<br />
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-14', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //input[@id = &apos;price&apos;] (tried for 30 second(s) with 500 MILLISECONDS interval)</b></a><br />
+    <div class="stackTrace" id="exception-14">
+              org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:82)<br />
+              org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)<br />
+              com.liveguru.commons.AbstractPage.waitForElementVisible(AbstractPage.java:579)<br />
+              com.liveguru.objects.AdvancedSearchPageObjects.inputPriceFrom(AdvancedSearchPageObjects.java:26)<br />
+              com.liveguru.frontend.SearchFunction.TC_10_SearchFunction(SearchFunction.java:33)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br />
+              java.lang.reflect.Method.invoke(Unknown Source)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:639)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:774)<br />
+              org.testng.TestRunner.run(TestRunner.java:624)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:359)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:261)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1140)<br />
+              org.testng.TestNG.run(TestNG.java:1048)<br />
+              org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)<br />
+              org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)<br />
+              org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)<br />
+                    <b>Caused by: </b> <a href="javascript:toggleElement('exception-15', 'block')" title="Click to expand/collapse">org.openqa.selenium.NoSuchWindowException: Currently focused window has been closed.<br/>
+Build info: version: &apos;3.9.1&apos;, revision: &apos;63f7b50&apos;, time: &apos;2018-02-07T22:42:28.403Z&apos;<br/>
+System info: host: &apos;DESKTOP-4H2CDN2&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;<br/>
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver<br/>
+Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:12846/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}<br/>
+Session ID: eb828c33-6307-4bbf-9904-9ddefc574b8d<br/>
+*** Element info: {Using=xpath, value=//input[@id = &apos;price&apos;]}</a><br />
+        <div class="stackTrace" id="exception-15">
+                      sun.reflect.GeneratedConstructorAccessor26.newInstance(Unknown Source)<br />
+                      sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)<br />
+                      java.lang.reflect.Constructor.newInstance(Unknown Source)<br />
+                      org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)<br />
+                      org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)<br />
+                      org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)<br />
+                      org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)<br />
+                      org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:398)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.findElementsByXPath(RemoteWebDriver.java:477)<br />
+                      org.openqa.selenium.By$ByXPath.findElements(By.java:356)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:359)<br />
+                      org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)<br />
+                      org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)<br />
+                      org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)<br />
+                      org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)<br />
+                      org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)<br />
+                      com.liveguru.commons.AbstractPage.waitForElementVisible(AbstractPage.java:579)<br />
+                      com.liveguru.objects.AdvancedSearchPageObjects.inputPriceFrom(AdvancedSearchPageObjects.java:26)<br />
+                      com.liveguru.frontend.SearchFunction.TC_10_SearchFunction(SearchFunction.java:33)<br />
+                      sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+                      sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br />
+                      sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br />
+                      java.lang.reflect.Method.invoke(Unknown Source)<br />
+                      org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)<br />
+                      org.testng.internal.Invoker.invokeMethod(Invoker.java:639)<br />
+                      org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)<br />
+                      org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)<br />
+                      org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)<br />
+                      org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)<br />
+                      org.testng.TestRunner.privateRun(TestRunner.java:774)<br />
+                      org.testng.TestRunner.run(TestRunner.java:624)<br />
+                      org.testng.SuiteRunner.runTest(SuiteRunner.java:359)<br />
+                      org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)<br />
+                      org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)<br />
+                      org.testng.SuiteRunner.run(SuiteRunner.java:261)<br />
+                      org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+                      org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br />
+                      org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)<br />
+                      org.testng.TestNG.runSuitesLocally(TestNG.java:1140)<br />
+                      org.testng.TestNG.run(TestNG.java:1048)<br />
+                      org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)<br />
+                      org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)<br />
+                      org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)<br />
+                  </div>
+          </div>
+      </td>
+</tr>
+      </table>
+
+  <table class="resultsTable" width="100%">
+    <tr><th colspan="3" class="header skipped">Skipped Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">com.liveguru.frontend.PurchaseProduct</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  TC_09_PurchaseProduct
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">com.liveguru.frontend.WishList</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  TC_07_ShareWishList
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+      </table>
+
+  
+</body>
+</html>

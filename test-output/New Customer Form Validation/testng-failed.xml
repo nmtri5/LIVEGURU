@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [New Customer Form Validation]">
+  <parameter name="browser" value="chrome"/>
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    <listener class-name="com.liveguru.commons.ExtentReportListener"/>
+  </listeners>
+  <test name="Run test on Chrome browser(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.liveguru.frontend.TC_RegisterToSystem">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+          <include name="registerToSystemSuccessfully"/>
+        </methods>
+      </class> <!-- com.liveguru.frontend.TC_RegisterToSystem -->
+    </classes>
+  </test> <!-- Run test on Chrome browser(failed) -->
+</suite> <!-- Failed suite [New Customer Form Validation] -->

@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Register_and_Verify">
+              <span class="suite-name border-skipped">Register and Verify</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Register_and_Verify">
+                    <span>D:\Automation Test\Workspace\LIVEGURU\resources\runTestcases.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Register_and_Verify">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Register_and_Verify">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Register_and_Verify">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Register_and_Verify">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Register_and_Verify">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Register_and_Verify">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">10 methods,  10 skipped,  </span>
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Register_and_Verify" class="hide-methods skipped suite-Register_and_Verify"> (hide)</a> <!-- hide-methods skipped suite-Register_and_Verify -->
+                      <a href="#" panel-name="suite-Register_and_Verify" class="show-methods skipped suite-Register_and_Verify"> (show)</a> <!-- show-methods skipped suite-Register_and_Verify -->
+                    </span>
+                    <div class="method-list-content skipped suite-Register_and_Verify">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Register_and_Verify" title="com.liveguru.frontend.Global_RegisterToSystem" hash-for-method="TC_01_registerToSystemSuccessfully">TC_01_registerToSystemSuccessfully</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Register_and_Verify" title="com.liveguru.frontend.Global_RegisterToSystem" hash-for-method="TC_02_VerifyUserInformation">TC_02_VerifyUserInformation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Register_and_Verify" title="com.liveguru.frontend.ProductDetail" hash-for-method="TC_03_VerifyPriceMatch">TC_03_VerifyPriceMatch</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Register_and_Verify" title="com.liveguru.frontend.Cart" hash-for-method="TC_04_ApplyCoupon">TC_04_ApplyCoupon</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Register_and_Verify" title="com.liveguru.frontend.Cart" hash-for-method="TC_05_AddToCartLimitation">TC_05_AddToCartLimitation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Register_and_Verify" title="com.liveguru.frontend.CompareProduct" hash-for-method="TC_06_CompareProduct">TC_06_CompareProduct</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Register_and_Verify" title="com.liveguru.frontend.WishList" hash-for-method="TC_07_ShareWishList">TC_07_ShareWishList</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Register_and_Verify" title="com.liveguru.frontend.Review" hash-for-method="TC_08_AddReview">TC_08_AddReview</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Register_and_Verify" title="com.liveguru.frontend.PurchaseProduct" hash-for-method="TC_09_PurchaseProduct">TC_09_PurchaseProduct</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Register_and_Verify" title="com.liveguru.frontend.SearchFunction" hash-for-method="TC_10_SearchFunction">TC_10_SearchFunction</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Register_and_Verify -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Register_and_Verify" class="panel Register_and_Verify">
+          <div class="suite-Register_and_Verify-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.liveguru.frontend.PurchaseProduct</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_09_PurchaseProduct">
+                  </a> <!-- TC_09_PurchaseProduct -->
+                  <span class="method-name">TC_09_PurchaseProduct</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Register_and_Verify-class-skipped -->
+          <div class="suite-Register_and_Verify-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.liveguru.frontend.ProductDetail</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_03_VerifyPriceMatch">
+                  </a> <!-- TC_03_VerifyPriceMatch -->
+                  <span class="method-name">TC_03_VerifyPriceMatch</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Register_and_Verify-class-skipped -->
+          <div class="suite-Register_and_Verify-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.liveguru.frontend.Cart</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_04_ApplyCoupon">
+                  </a> <!-- TC_04_ApplyCoupon -->
+                  <span class="method-name">TC_04_ApplyCoupon</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_05_AddToCartLimitation">
+                  </a> <!-- TC_05_AddToCartLimitation -->
+                  <span class="method-name">TC_05_AddToCartLimitation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Register_and_Verify-class-skipped -->
+          <div class="suite-Register_and_Verify-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.liveguru.frontend.SearchFunction</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_10_SearchFunction">
+                  </a> <!-- TC_10_SearchFunction -->
+                  <span class="method-name">TC_10_SearchFunction</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Register_and_Verify-class-skipped -->
+          <div class="suite-Register_and_Verify-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.liveguru.frontend.Global_RegisterToSystem</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_01_registerToSystemSuccessfully">
+                  </a> <!-- TC_01_registerToSystemSuccessfully -->
+                  <span class="method-name">TC_01_registerToSystemSuccessfully</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_02_VerifyUserInformation">
+                  </a> <!-- TC_02_VerifyUserInformation -->
+                  <span class="method-name">TC_02_VerifyUserInformation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Register_and_Verify-class-skipped -->
+          <div class="suite-Register_and_Verify-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.liveguru.frontend.WishList</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_07_ShareWishList">
+                  </a> <!-- TC_07_ShareWishList -->
+                  <span class="method-name">TC_07_ShareWishList</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Register_and_Verify-class-skipped -->
+          <div class="suite-Register_and_Verify-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.liveguru.frontend.Review</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_08_AddReview">
+                  </a> <!-- TC_08_AddReview -->
+                  <span class="method-name">TC_08_AddReview</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Register_and_Verify-class-skipped -->
+          <div class="suite-Register_and_Verify-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.liveguru.frontend.CompareProduct</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_06_CompareProduct">
+                  </a> <!-- TC_06_CompareProduct -->
+                  <span class="method-name">TC_06_CompareProduct</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Register_and_Verify-class-skipped -->
+        </div> <!-- panel Register_and_Verify -->
+        <div panel-name="test-xml-Register_and_Verify" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">D:\Automation Test\Workspace\LIVEGURU\resources\runTestcases.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Register and Verify&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;org.uncommons.reportng.HTMLReporter&quot;/&gt;
+    &lt;listener class-name=&quot;org.uncommons.reportng.JUnitXMLReporter&quot;/&gt;
+    &lt;listener class-name=&quot;com.liveguru.commons.ExtentReportListener&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test name=&quot;Run test on ie browser&quot;&gt;
+    &lt;parameter name=&quot;shipping&quot; value=&quot;.\testdata\com\liveguru\purchase\ShippingAddress.json&quot;/&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;ie&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.liveguru.frontend.Global_RegisterToSystem&quot;/&gt;
+      &lt;class name=&quot;com.liveguru.frontend.ProductDetail&quot;/&gt;
+      &lt;class name=&quot;com.liveguru.frontend.Cart&quot;/&gt;
+      &lt;class name=&quot;com.liveguru.frontend.CompareProduct&quot;/&gt;
+      &lt;class name=&quot;com.liveguru.frontend.Review&quot;/&gt;
+      &lt;class name=&quot;com.liveguru.frontend.WishList&quot;/&gt;
+      &lt;class name=&quot;com.liveguru.frontend.PurchaseProduct&quot;/&gt;
+      &lt;class name=&quot;com.liveguru.frontend.SearchFunction&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Run test on ie browser --&gt;
+&lt;/suite&gt; &lt;!-- Register and Verify --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Register_and_Verify" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Register and Verify</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Run test on ie browser (8 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Register_and_Verify" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Register and Verify</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Register_and_Verify" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Register and Verify</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Register_and_Verify');
+function tableData_Register_and_Verify() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(10);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'TC_04_ApplyCoupon')
+data.setCell(0, 2, 'com.liveguru.frontend.Cart')
+data.setCell(0, 3, 5);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'TC_10_SearchFunction')
+data.setCell(1, 2, 'com.liveguru.frontend.SearchFunction')
+data.setCell(1, 3, 3);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'TC_01_registerToSystemSuccessfully')
+data.setCell(2, 2, 'com.liveguru.frontend.Global_RegisterToSystem')
+data.setCell(2, 3, 2);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'TC_07_ShareWishList')
+data.setCell(3, 2, 'com.liveguru.frontend.WishList')
+data.setCell(3, 3, 2);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'TC_02_VerifyUserInformation')
+data.setCell(4, 2, 'com.liveguru.frontend.Global_RegisterToSystem')
+data.setCell(4, 3, 2);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'TC_09_PurchaseProduct')
+data.setCell(5, 2, 'com.liveguru.frontend.PurchaseProduct')
+data.setCell(5, 3, 1);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'TC_06_CompareProduct')
+data.setCell(6, 2, 'com.liveguru.frontend.CompareProduct')
+data.setCell(6, 3, 1);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'TC_05_AddToCartLimitation')
+data.setCell(7, 2, 'com.liveguru.frontend.Cart')
+data.setCell(7, 3, 1);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'TC_08_AddReview')
+data.setCell(8, 2, 'com.liveguru.frontend.Review')
+data.setCell(8, 3, 0);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'TC_03_VerifyPriceMatch')
+data.setCell(9, 2, 'com.liveguru.frontend.ProductDetail')
+data.setCell(9, 3, 0);
+window.suiteTableData['Register_and_Verify']= { tableData: data, tableDiv: 'times-div-Register_and_Verify'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 17 ms</span>
+              <div id="times-div-Register_and_Verify">
+              </div> <!-- times-div-Register_and_Verify -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Register_and_Verify" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Register and Verify</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Register_and_Verify" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Register_and_Verify" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.liveguru.frontend.Global_RegisterToSystem</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">beforeTest(ie)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">TC_01_registerToSystemSuccessfully</span>
+                <span class="method-start">3649 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC_02_VerifyUserInformation</span>
+                <span class="method-start">3655 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">afterTest</span>
+                <span class="method-start">3662 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.liveguru.frontend.ProductDetail</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">beforeTest(ie)</span>
+                <span class="method-start">3676 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">TC_03_VerifyPriceMatch</span>
+                <span class="method-start">4624 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">afterTest</span>
+                <span class="method-start">4625 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.liveguru.frontend.Cart</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">beforeClass(ie)</span>
+                <span class="method-start">4627 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">TC_04_ApplyCoupon</span>
+                <span class="method-start">5495 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC_05_AddToCartLimitation</span>
+                <span class="method-start">5501 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">afterClass</span>
+                <span class="method-start">5504 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.liveguru.frontend.CompareProduct</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">beforeClass(ie)</span>
+                <span class="method-start">5506 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">TC_06_CompareProduct</span>
+                <span class="method-start">6476 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">afterClass</span>
+                <span class="method-start">6478 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.liveguru.frontend.Review</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">beforeClass(ie)</span>
+                <span class="method-start">6479 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">TC_08_AddReview</span>
+                <span class="method-start">7312 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">afterClass</span>
+                <span class="method-start">7313 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.liveguru.frontend.WishList</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">beforeClass(ie)</span>
+                <span class="method-start">7314 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">TC_07_ShareWishList</span>
+                <span class="method-start">8340 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">afterClass</span>
+                <span class="method-start">8343 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.liveguru.frontend.PurchaseProduct</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">beforeClass(ie, .\testdata\com\liveguru\purchase\ShippingAddress.json)</span>
+                <span class="method-start">8344 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">TC_09_PurchaseProduct</span>
+                <span class="method-start">9347 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">afterClass</span>
+                <span class="method-start">9349 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.liveguru.frontend.SearchFunction</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">beforeClass(ie)</span>
+                <span class="method-start">9351 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">TC_10_SearchFunction</span>
+                <span class="method-start">10356 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">afterClass</span>
+                <span class="method-start">10365 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
