@@ -21,4 +21,15 @@ public class AbstractPageUI {
 
 	public static final String DYNAMIC_LINK = "//a[text()='%s']";
 
+	
+	/******************* ADMIN *******************/
+	
+	public static final String DYNAMIC_ADMIN_BUTTON = "//button//span[text() = '%s']";
+	
+	public static final String DYNAMIC_ADMIN_PAGE_TITLE = "//div[@id = 'anchor-content']//h3";
+
+	public static final String ADMIN_LOADING_ICON = "//div[@id = 'loading-mask']";
+	
+	public static final String ADMIN_SYSTEM_MESSAGE = "//ul[@class='messages']//span";
+
 }

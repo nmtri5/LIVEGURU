@@ -1,2 +1,2 @@
-2019-06-26 16:23:49,176 INFO  com.liveguru.frontend.Global_RegisterToSystem - Register - Step 01: Hover and click to Register link on header
-2019-06-26 16:23:58,408 INFO  com.liveguru.frontend.Global_RegisterToSystem - Register - Step 02: Click to Create an Account
+2019-07-13 21:07:15,748 INFO  com.liveguru.backend.Invoices - Invoice printable - Step 01: Go to Sales -> Order menu
+2019-07-13 21:07:26,070 INFO  com.liveguru.backend.Invoices - Invoice printable - Step 01: Go to Sales -> Order menu

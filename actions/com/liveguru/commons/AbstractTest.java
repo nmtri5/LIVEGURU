@@ -8,6 +8,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -27,26 +28,21 @@ public class AbstractTest {
 		log = LogFactory.getLog(getClass());
 	}
 	
-	public WebDriver openBrowser(String browser) {
+	public WebDriver openBrowser(String browser, String url) {
 		if (browser.equalsIgnoreCase("firefox")) {
-			WebDriverManager.firefoxdriver().arch64().setup();
+			WebDriverManager.firefoxdriver().arch32().setup();
+			FirefoxProfile profile = new FirefoxProfile();
+			profile.setPreference("browser.helperApps.neverAsk.saveToDisk" , "application/octet-stream;application/csv;text/csv;application/vnd.ms-excel;"); 
+			profile.setPreference("browser.helperApps.alwaysAsk.force", false);
+			profile.setPreference("browser.download.manager.showWhenStarting",false);
+			profile.setPreference("browser.download.folderList", 2); 
+			profile.setPreference("browser.download.dir","e:\\SampleExcel"); 
 			driver = new FirefoxDriver();
 		} else if (browser.equalsIgnoreCase("chrome")) {
-			WebDriverManager.chromedriver().setup();
+			WebDriverManager.chromedriver().version("71.0.3578.80").setup();
 			driver = new ChromeDriver();
 		} else if (browser.equalsIgnoreCase("ie")) {
-			
-			DesiredCapabilities capability = DesiredCapabilities.internetExplorer();
-			capability.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
-			capability.setCapability(CapabilityType.ELEMENT_SCROLL_BEHAVIOR, true);
-			capability.setCapability(CapabilityType.HAS_NATIVE_EVENTS, false);
-			capability.setCapability("ignoreProtectedModeSettings", true);
-			capability.setCapability("ignoreZoomSetting", true);
-			capability.setCapability("requireWindowFocus", true);
-			capability.setCapability("enableElementCacheCleanup", true);
-			capability.setJavascriptEnabled(true);
-			WebDriverManager.iedriver().version("3.3.0").arch32().setup();
-			
+			WebDriverManager.iedriver().version("3.9.0").arch32().setup();
 			driver = new InternetExplorerDriver();
 		} else if (browser.equalsIgnoreCase("headless")) {
 			WebDriverManager.chromedriver().setup();
@@ -58,7 +54,7 @@ public class AbstractTest {
 		
 		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
-		driver.get(Constants.STAGING_URL);
+		driver.get(url);
 		
 		return driver;
 	}

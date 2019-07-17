@@ -11,6 +11,7 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.liveguru.commons.AbstractTest;
+import com.liveguru.commons.Constants;
 import com.liveguru.commons.PageFactoryManager;
 import com.liveguru.objects.AccountDashboardPageObjects;
 import com.liveguru.objects.AccountInformationPageObjects;
@@ -40,7 +41,7 @@ public class Global_RegisterToSystem extends AbstractTest {
 	@Parameters("browser")
 	@BeforeClass
 	public void beforeTest(String browser) {
-		driver = openBrowser(browser);
+		driver = openBrowser(browser, Constants.STAGING_URL);
 		
 		homePage = PageFactoryManager.getHomePage(driver);
 	}

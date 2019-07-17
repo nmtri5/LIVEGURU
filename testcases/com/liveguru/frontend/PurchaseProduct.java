@@ -11,6 +11,7 @@ import org.testng.annotations.Test;
 import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.liveguru.commons.AbstractTest;
+import com.liveguru.commons.Constants;
 import com.liveguru.commons.PageFactoryManager;
 import com.liveguru.objects.AccountDashboardPageObjects;
 import com.liveguru.objects.CartDetailPageObjects;
@@ -34,7 +35,7 @@ public class PurchaseProduct extends AbstractTest {
 	@Parameters({"browser" , "shipping"})
 	@BeforeClass
 	public void beforeClass(String browser, String shippdingData) throws JsonParseException, JsonMappingException, IOException {
-		driver = openBrowser(browser);
+		driver = openBrowser(browser, Constants.STAGING_URL);
 		data = ShippingInformationJson.get(shippdingData);
 		
 		homePage = PageFactoryManager.getHomePage(driver);

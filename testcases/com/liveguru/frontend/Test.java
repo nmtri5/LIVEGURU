@@ -4,7 +4,11 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Test {
-
+	public String a = "aasdf";
+	
+	private String getA() {
+		return a;
+	}
 	public static void main(String[] args) {
 
 		Map<String, Integer> test = new HashMap<String, Integer>();

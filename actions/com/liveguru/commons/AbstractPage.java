@@ -9,6 +9,7 @@ import java.util.Set;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
@@ -21,7 +22,10 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.liveguru.objects.AccountDashboardPageObjects;
+import com.liveguru.objects.AdminDashboardPageObjects;
 
+import liveguru.AdminLoginPageUI;
+import liveguru.AdminOrderPageUI;
 import liveguru.HomePageUI;
 
 public class AbstractPage extends Constants {
@@ -33,8 +37,17 @@ public class AbstractPage extends Constants {
 	long shortTimeout = 5;
 	long longTimeout = 30;
 
-	public void openAnyUrl(WebDriver driver, String url) {
+	public AbstractPage openAnyUrl(WebDriver driver, String url) {
 		driver.get(url);
+		switch (url) {
+		case STAGING_URL:
+			return PageFactoryManager.getHomePage(driver);
+		case ADMIN_URL:
+			return PageFactoryManager.getAdminLoginPage(driver);
+		default:
+			return PageFactoryManager.getHomePage(driver);
+		}
+		
 	}
 
 	public String getCurrentPageUrl(WebDriver driver) {
@@ -62,8 +75,12 @@ public class AbstractPage extends Constants {
 	}
 
 	public void acceptAlert(WebDriver driver) {
-		waitForAlertPresence(driver);
-		driver.switchTo().alert().accept();
+		try {
+			waitForAlertPresence(driver);
+			driver.switchTo().alert().accept();
+		} catch (NoAlertPresentException Ex) {
+			System.out.println("Popup not present");
+		} 
 	}
 
 	public void cancelAlert(WebDriver driver) {
@@ -136,6 +153,23 @@ public class AbstractPage extends Constants {
 		WebElement element = driver.findElement(By.xpath(locator));
 		Select select = new Select(element);
 		select.selectByVisibleText(value);
+	}
+	
+	public String getCurrentTextInDropdown(WebDriver driver, String locator) {
+		waitExplicit = new WebDriverWait(driver, 10);
+		waitExplicit.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(locator)));
+		WebElement element = driver.findElement(By.xpath(locator));
+		Select select = new Select(element);
+		return select.getFirstSelectedOption().getText();
+	}
+	
+	public String getCurrentTextInDropdown(WebDriver driver, String locator, String... options) {
+		waitExplicit = new WebDriverWait(driver, 10);
+		String dynamicLocator = String.format(locator, (Object[]) options);
+		waitExplicit.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(dynamicLocator)));
+		WebElement element = driver.findElement(By.xpath(dynamicLocator));
+		Select select = new Select(element);
+		return select.getFirstSelectedOption().getText();
 	}
 
 	public void selectItemInHtmlDropdown(WebDriver driver, String value, String locator, String... options) {
@@ -388,6 +422,16 @@ public class AbstractPage extends Constants {
 		Actions action = new Actions(driver);
 		action.moveToElement(element).perform();
 	}
+	
+	public void hoverMouseToElement(WebDriver driver, String locator, String...option) {
+		waitExplicit = new WebDriverWait(driver, 30);
+		String dynamicLocator = String.format(locator, (Object[]) option);
+		waitExplicit.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(dynamicLocator)));
+		WebElement element = driver.findElement(By.xpath(dynamicLocator));
+		Actions action = new Actions(driver);
+		action.moveToElement(element).perform();
+		sleep(1);
+	}
 
 	public void doubleClickToElement(WebDriver driver, String locator) {
 		waitExplicit = new WebDriverWait(driver, 30);
@@ -594,17 +638,15 @@ public class AbstractPage extends Constants {
 
 	public void waitForElementVisible(WebDriver driver, String locator, String... options) {
 		waitExplicit = new WebDriverWait(driver, 10);
-		locator = String.format(locator, (Object[]) options);
-		this.locator = By.xpath(locator);
+		String dynamicLocator = String.format(locator, (Object[]) options);
+		this.locator = By.xpath(dynamicLocator);
 		waitExplicit.until(ExpectedConditions.visibilityOfElementLocated(this.locator));
-
 	}
 
 	public void waitForElementClickable(WebDriver driver, String locator) {
 		waitExplicit = new WebDriverWait(driver, 30);
 		this.locator = By.xpath(locator);
 		waitExplicit.until(ExpectedConditions.elementToBeClickable(this.locator));
-
 	}
 
 	public void waitForElementInvisible(WebDriver driver, String locator) {
@@ -628,4 +670,27 @@ public class AbstractPage extends Constants {
 		}
 	}
 
+	public void clickToAnyButtonAdminPage(WebDriver driver, String button) {
+		waitForElementVisible(driver, AbstractPageUI.DYNAMIC_ADMIN_BUTTON, button);
+		clickToElement(driver, AbstractPageUI.DYNAMIC_ADMIN_BUTTON, button);
+	}
+	
+	public boolean isAdminPageTitleCorrect(WebDriver driver, String title) {
+		return isElementDisplayed(driver, AbstractPageUI.DYNAMIC_ADMIN_PAGE_TITLE, title);
+	}
+	
+	public String getAdminSystemMessage(WebDriver driver) {
+		return getTextElement(driver, AbstractPageUI.ADMIN_SYSTEM_MESSAGE);
+	}
+	
+
+	public AdminDashboardPageObjects loginToAdminPage(WebDriver driver, String adminUser, String adminPassword) {
+		waitForElementVisible(driver, AdminLoginPageUI.ADMIN_USER_TEXTBOX);
+		waitForElementVisible(driver, AdminLoginPageUI.ADMIN_PASSWORD_TEXTBOX);
+		sendKeyToElement(driver, AdminLoginPageUI.ADMIN_USER_TEXTBOX, adminUser);
+		sendKeyToElement(driver, AdminLoginPageUI.ADMIN_PASSWORD_TEXTBOX, adminPassword);
+
+		clickToElement(driver, AdminLoginPageUI.ADMIN_LOGIN_BUTTON);
+		return PageFactoryManager.getAdminDashboardPage(driver);
+	}
 }

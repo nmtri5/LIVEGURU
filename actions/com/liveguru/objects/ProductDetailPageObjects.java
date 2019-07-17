@@ -36,4 +36,13 @@ public class ProductDetailPageObjects extends AbstractPage {
 		return PageFactoryManager.getProductReviewPage(driver);
 	}
 
+	public void changeTabs(String tab) {
+		waitForElementVisible(driver, ProductDetailPageUI.DYNAMIC_PRODUCT_TABS, tab);
+		clickToElement(driver, ProductDetailPageUI.DYNAMIC_PRODUCT_TABS, tab);
+	}
+
+	public boolean isCommentDisplayed(String title, String nickname, String review) {
+		return isElementDisplayed(driver, ProductDetailPageUI.DYNAMIC_REVIEW_WITH_SPECIFIC_NICKNAME, title, nickname, review );
+	}
+
 }

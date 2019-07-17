@@ -7,6 +7,7 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.liveguru.commons.AbstractTest;
+import com.liveguru.commons.Constants;
 import com.liveguru.commons.PageFactoryManager;
 import com.liveguru.objects.AdvancedSearchPageObjects;
 import com.liveguru.objects.HomePageObjects;
@@ -20,7 +21,7 @@ public class SearchFunction extends AbstractTest{
 	@BeforeClass
 	public void beforeClass(String browser) {
 		log.info("Search Function - Step 01: Go to liveguru page");
-		driver = openBrowser(browser);
+		driver = openBrowser(browser, Constants.STAGING_URL);
 		homePage = PageFactoryManager.getHomePage(driver);
 		
 		log.info("Search Function - Step 02: Click on Advanced Search");

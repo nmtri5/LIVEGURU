@@ -6,7 +6,9 @@
 			class-name="org.uncommons.reportng.JUnitXMLReporter" />
 		<listener
 			class-name="com.liveguru.commons.ExtentReportListener" />
-		<listener class-name="commons.RetryListener" />
+		<listener
+			class-name="com.liveguru.commons.RetryListener" />
+		
 	</listeners>
 
 	<test name="Run test on ie browser">
@@ -14,15 +16,12 @@
 		<parameter name="shipping"
 			value=".\testdata\com\liveguru\purchase\ShippingAddress.json" />
 		<classes>
-			<class name="com.liveguru.frontend.Global_RegisterToSystem" />
-			<class name="com.liveguru.frontend.ProductDetail" />
-			<class name="com.liveguru.frontend.Cart" />
-			<class name="com.liveguru.frontend.CompareProduct" />
-			<class name="com.liveguru.frontend.Review" />
-			<class name="com.liveguru.frontend.WishList" />
-			<class name="com.liveguru.frontend.PurchaseProduct" />
-			<class name="com.liveguru.frontend.SearchFunction" />
-
+			<class name="com.liveguru.backend.Invoices" /> 
+			<class name="com.liveguru.backend.ReviewMechanism" /> 
+			<class name="com.liveguru.backend.Sorting" /> 
+			<class name="com.liveguru.backend.Pagination" /> 
+			<class name="com.liveguru.backend.Search" /> 
+			<class name="com.liveguru.backend.Checkboxes" />
 		</classes>
 	</test>
 

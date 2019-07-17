@@ -4,6 +4,13 @@ import org.openqa.selenium.WebDriver;
 
 import com.liveguru.objects.AccountDashboardPageObjects;
 import com.liveguru.objects.AccountInformationPageObjects;
+import com.liveguru.objects.AdminDashboardPageObjects;
+import com.liveguru.objects.AdminEditReviewPageObjects;
+import com.liveguru.objects.AdminInvoicePageObjects;
+import com.liveguru.objects.AdminLoginPageObjects;
+import com.liveguru.objects.AdminManageCustomerPageObjects;
+import com.liveguru.objects.AdminOrderPageObjects;
+import com.liveguru.objects.AdminReviewPageObjects;
 import com.liveguru.objects.AdvancedSearchPageObjects;
 import com.liveguru.objects.CartDetailPageObjects;
 import com.liveguru.objects.CheckoutPageObjects;
@@ -64,4 +71,33 @@ public class PageFactoryManager {
 	public static AdvancedSearchPageObjects getAdvancedSearchPage(WebDriver driver) {
 		return new AdvancedSearchPageObjects(driver);
 	}
+
+	public static AdminLoginPageObjects getAdminLoginPage(WebDriver driver) {
+		return new AdminLoginPageObjects(driver);
+	}
+	
+	public static AdminDashboardPageObjects getAdminDashboardPage(WebDriver driver) {
+		return new AdminDashboardPageObjects(driver);
+	}
+
+	public static AdminOrderPageObjects getOrderPage(WebDriver driver) {
+		return new AdminOrderPageObjects(driver);
+	}
+	
+	public static AdminInvoicePageObjects getAdminInvoicePage(WebDriver driver) {
+		return new AdminInvoicePageObjects(driver);
+	}
+	
+	public static AdminReviewPageObjects getAdminReviewPage(WebDriver driver) {
+		return new AdminReviewPageObjects(driver);
+	}
+
+	public static AdminEditReviewPageObjects getAdminEditReviewPage(WebDriver driver) {
+		return new AdminEditReviewPageObjects(driver);
+	}
+
+	public static AdminManageCustomerPageObjects getAdminManageCustomersPage(WebDriver driver) {
+		return new AdminManageCustomerPageObjects(driver);
+	}
+
 }

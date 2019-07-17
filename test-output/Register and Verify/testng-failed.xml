@@ -7,69 +7,49 @@
     <listener class-name="org.uncommons.reportng.HTMLReporter"/>
     <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
     <listener class-name="com.liveguru.commons.ExtentReportListener"/>
+    <listener class-name="com.liveguru.commons.RetryListener"/>
   </listeners>
   <test name="Run test on ie browser(failed)">
     <parameter name="shipping" value=".\testdata\com\liveguru\purchase\ShippingAddress.json"/>
     <parameter name="browser" value="ie"/>
     <classes>
-      <class name="com.liveguru.frontend.PurchaseProduct">
+      <class name="com.liveguru.backend.Sorting">
         <methods>
-          <include name="afterClass"/>
-          <include name="TC_09_PurchaseProduct"/>
+          <include name="TC_03_VerifySortFunction"/>
           <include name="beforeClass"/>
         </methods>
-      </class> <!-- com.liveguru.frontend.PurchaseProduct -->
-      <class name="com.liveguru.frontend.ProductDetail">
+      </class> <!-- com.liveguru.backend.Sorting -->
+      <class name="com.liveguru.backend.Invoices">
         <methods>
-          <include name="beforeTest"/>
-          <include name="afterTest"/>
-          <include name="TC_03_VerifyPriceMatch"/>
-        </methods>
-      </class> <!-- com.liveguru.frontend.ProductDetail -->
-      <class name="com.liveguru.frontend.Cart">
-        <methods>
-          <include name="TC_05_AddToCartLimitation"/>
-          <include name="beforeClass"/>
-          <include name="afterClass"/>
-          <include name="TC_04_ApplyCoupon"/>
-        </methods>
-      </class> <!-- com.liveguru.frontend.Cart -->
-      <class name="com.liveguru.frontend.SearchFunction">
-        <methods>
-          <include name="afterClass"/>
-          <include name="TC_10_SearchFunction"/>
+          <include name="TC_01_InvoiceCanBePrinted"/>
           <include name="beforeClass"/>
         </methods>
-      </class> <!-- com.liveguru.frontend.SearchFunction -->
-      <class name="com.liveguru.frontend.Global_RegisterToSystem">
+      </class> <!-- com.liveguru.backend.Invoices -->
+      <class name="com.liveguru.backend.Checkboxes">
         <methods>
-          <include name="beforeTest"/>
-          <include name="TC_01_registerToSystemSuccessfully"/>
-          <include name="afterTest"/>
-          <include name="TC_02_VerifyUserInformation"/>
-        </methods>
-      </class> <!-- com.liveguru.frontend.Global_RegisterToSystem -->
-      <class name="com.liveguru.frontend.WishList">
-        <methods>
-          <include name="beforeClass"/>
-          <include name="TC_07_ShareWishList"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.liveguru.frontend.WishList -->
-      <class name="com.liveguru.frontend.Review">
-        <methods>
-          <include name="TC_08_AddReview"/>
-          <include name="afterClass"/>
+          <include name="TC_06_CheckboxFunction"/>
           <include name="beforeClass"/>
         </methods>
-      </class> <!-- com.liveguru.frontend.Review -->
-      <class name="com.liveguru.frontend.CompareProduct">
+      </class> <!-- com.liveguru.backend.Checkboxes -->
+      <class name="com.liveguru.backend.Pagination">
         <methods>
-          <include name="afterClass"/>
-          <include name="TC_06_CompareProduct"/>
           <include name="beforeClass"/>
+          <include name="TC_04_CheckPagination"/>
         </methods>
-      </class> <!-- com.liveguru.frontend.CompareProduct -->
+      </class> <!-- com.liveguru.backend.Pagination -->
+      <class name="com.liveguru.backend.ReviewMechanism">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="TC_02_ProductReviewMechanism"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.liveguru.backend.ReviewMechanism -->
+      <class name="com.liveguru.backend.Search">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="TC_05_SearchFunction"/>
+        </methods>
+      </class> <!-- com.liveguru.backend.Search -->
     </classes>
   </test> <!-- Run test on ie browser(failed) -->
 </suite> <!-- Failed suite [Register and Verify] -->

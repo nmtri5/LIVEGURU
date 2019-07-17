@@ -7,6 +7,7 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.liveguru.commons.AbstractTest;
+import com.liveguru.commons.Constants;
 import com.liveguru.commons.PageFactoryManager;
 import com.liveguru.objects.AccountDashboardPageObjects;
 import com.liveguru.objects.HomePageObjects;
@@ -27,7 +28,7 @@ public class WishList extends AbstractTest{
 	@Parameters("browser")
 	@BeforeClass
 	public void beforeClass(String browser) {
-		driver = openBrowser(browser);
+		driver = openBrowser(browser, Constants.STAGING_URL);
 		
 		homePage = PageFactoryManager.getHomePage(driver);
 		loginPage = (LoginPageObjects) homePage.openAnySubPageFromHomePage(driver, "My Account");
